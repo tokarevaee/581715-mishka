@@ -7,11 +7,9 @@
   <body class="">
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="http://via.placeholder.com/86x35" width="86"
-        height="35" alt="Mishka">
+        <img src="http://via.placeholder.com/86x35" width="86" height="35" alt="Mishka">
       </a>
       <nav class="main-nav">
-
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -20,11 +18,11 @@
             <li class="site-list__item">
               <a href="#">Вязание на заказ</a>
             </li>
-            <li class="site-list__item site-list__search">
+            <li class="site-list__item site-list__item--search">
               <a href="#">Поиск по сайту</a>
             </li>
-            <li class="site-list__item site-list__basket">
-              <a href="#">Корзина: <span class="basket-volume">пока пусто</span></a>
+            <li class="site-list__item site-list__item--basket">
+              <a href="#">Корзина:<span class="basket-volume">пока пусто</span></a>
             </li>
           </ul>
         </div>
@@ -33,125 +31,76 @@
     <main class="page-main">
       <section class="index-slogan">
         <div class="index-slogan__wrapper">
-          <h1 class="index-slogan__title">
-            Милые штуки ручной работы для дома
-          </h1>
+          <h1 class="page-main--slogan index-slogan__title">Милые штуки ручной работы для дома</h1>
         </div>
       </section>
       <section class="products">
         <div class="decoration products__decoration">
-          <h2 class="decoration__title">Предметы интерьера</h2>
+          <a href="#">
+            <h2 class="decoration__title">Предметы интерьера</h2>
+          </a>
         </div>
         <div class="toys products__toys">
-          <h2 class="toys__title">Детские игрушки</h2>
+          <a href="#">
+            <h2 class="toys__title">Детские игрушки</h2>
+          </a>
         </div>
       </section>
       <section class="weekend-product">
-        <h3 class="weekend-product__name">
-          Вязаные корзинки
-        </h3>
-        <b class="weekend-product__title">
-          Товар недели
-        </b>
+        <h3 class="page-main--slogan">Вязаные корзинки</h3>
+        <b class="weekend-product__title">Товар недели</b>
         <p class="weekend-product__description">
           Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
         </p>
         <table class="weekend-product__about">
           <tr>
-            <td class="weekend-product__field">
-             Цвет:
-            </td>
-            <td class="weekend-product__value">
-              «Тиффани»/серый
-            </td>
+            <td class="weekend-product__field">Цвет:</td>
+            <td class="weekend-product__value">«Тиффани»/серый</td>
           </tr>
           <tr>
-            <td class="weekend-product__field">
-              Диаметр:
-            </td>
-            <td class="weekend-product__value">
-              25 см
-            </td>
+            <td class="weekend-product__field">Диаметр:</td>
+            <td class="weekend-product__value">25 см</td>
           </tr>
           <tr>
-            <td class="weekend-product__field">
-              Высота:
-            </td>
-            <td class="weekend-product__value">
-              15см
-            </td>
+            <td class="weekend-product__field">Высота:</td>
+            <td class="weekend-product__value">15см</td>
           </tr>
         </table>
-        <img class="weekend-product__img" src="http://via.placeholder.com/260x315" width="260"
-             height="315" alt="Вязанные корзинки">
-        <span class="weekend-product_price">
-          Цена: 990 руб.
-        </span>
-        <button class="button weekend-product__button" type="button">
-          Заказать
-        </button>
+        <img class="weekend-product__img" src="http://via.placeholder.com/260x315" width="260" height="315" alt="Вязанные корзинки">
+        <span class="weekend-product_price">Цена: 990 руб.</span>
+        <a href="#" class="btn weekend-product__btn">Заказать</a>
       </section>
       <section class="advantages">
-        <h3 class="advantage__title">
-          Коротко о нас:
-        </h3>
+        <h3 class="page-main--slogan">Коротко о нас:</h3>
         <ul class="advantages__list">
-          <li class="advantages__item">
-            Экологически чистые материалы
-          </li>
-          <li class="advantages__item">
-            Скандинавский стиль по российской цене
-          </li>
-          <li class="advantages__item">
-            Увеличивает лайки на фотографиях
-          </li>
-          <li class="advantages__item">
-            Связано вручную с любовью и умилением
-          </li>
-          <li class="advantages__item">
-            Поддержка отечественного производителя
-          </li>
-          <li class="advantages__item">
-            Поставляется в подарочной упаковке
-          </li>
+          <li class="advantages__item">Экологически чистые материалы</li>
+          <li class="advantages__item">Скандинавский стиль по российской цене</li>
+          <li class="advantages__item">Увеличивает лайки на фотографиях</li>
+          <li class="advantages__item">Связано вручную с любовью и умилением</li>
+          <li class="advantages__item">Поддержка отечественного производителя</li>
+          <li class="advantages__item">Поставляется в подарочной упаковке</li>
         </ul>
       </section>
       <section class="reviews">
-        <h3 class="reviews__title">
-          Отзывы
-        </h3>
+        <h3 class="page-main--slogan">Отзывы</h3>
         <p class="reviews__text">
           Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных         инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более          стильными, а также набирают больше лайков!
         </p>
-        <cite class="reviews__author-name">
-          Анастасия Красильникова
-        </cite>
-        <a class="reviews__tweet" href="">
-          @misssssiskras
-        </a>
+        <cite class="reviews__author-name">Анастасия Красильникова</cite>
+        <a class="reviews__tweet" href="">@misssssiskras</a>
         <button class="reviews__prev" type="button">Предыдущий отзыв</button>
         <button class="reviews__next" type="button">Следующий отзыв</button>
-        <button class="button reviews__button" type="button">
-          Написать
-        </button>
+        <a href="#" class="btn reviews__btn">Написать</a>
       </section>
       <section class="contacts">
-        <h3 class="contacts__title">
-          Контакты
-        </h3>
+        <h3 class="page-main--slogan">Контакты</h3>
         <table class="contacts__list">
           <tr>
-            <td class="contacts__value">
-              e-mail:
-            </td>
-            <td class="contacts__mail">
-              info@mimimishkashop.ru
-            </td>
+            <td class="contacts__value">e-mail:</td>
+            <td class="contacts__mail">info@mimimishkashop.ru</td>
           </tr>
           <tr>
-            <td class="contacts__list">
-              адрес:
-            </td>
+            <td class="contacts__list">адрес:</td>
             <td class="contacts__address">
               г. Санкт-Петербург,
               ул. Большая Конюшенная,
@@ -161,60 +110,45 @@
         </table>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="100%" height="322" allowfullscreen>
         </iframe>
-        <button class="button contacts__button" type="button">
-          Напишите нам
-        </button>
+        <a href="#" class="btn contacts__btn">Напишите нам</a>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__social social">
-        <b class="social__title">Давайте дружить!</b>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              Мы в Вконтакте
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-              Мы в Фейсбуке
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
-              Мы в Инстаграме
-            </a>
-          </li>
-        </ul>
-      </div>
+      <p class="social page-footer__social">
+        <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+          Мы в Вконтакте
+        </a>
+        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+          Мы в Фейсбуке
+        </a>
+        <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+          Мы в Инстаграме
+        </a>
+      </p>
       <div class="page-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
       </div>
     </footer>
   <div class="popup popup-basket">
-    <h3 class="popup-basket__title">
-      Добавить в корзину
-    </h3>
-    <span class="popup-basket__option">
-      Выберете размер:
-    </span>
-    <ul class="popup-basket__list">
-      <li class="popup-basket__item">
-        <input class="popup-basket__option" type="radio" name="size" id="s">
-        <label class="popup-basket__label" for="s">s</label>
-      </li>
-      <li class="popup-basket__item">
-        <input class="popup-basket__option" type="radio" name="size" id="m">
-        <label class="popup-basket__label" for="m">m</label>
-      </li>
-      <li class="popup-basket__item">
-        <input class="popup-basket__option" type="radio" name="size" id="l">
-        <label class="popup-basket__label" for="l">l</label>
-      </li>
-    </ul>
-    <button class="popup-basket__button">
-      Добавить
-    </button>
+    <form method="get" action="https://echo.htmlacademy.ru">
+      <h3 class="popup-basket__title">Добавить в корзину</h3>
+      <span class="popup-basket__option">Выберете размер:</span>
+      <ul class="popup-basket__list">
+        <li class="popup-basket__item">
+          <input class="popup-basket__option" type="radio" name="size" id="s" value="s">
+          <label class="popup-basket__label" for="s">s</label>
+        </li>
+        <li class="popup-basket__item">
+          <input class="popup-basket__option" type="radio" name="size" id="m" value="m">
+          <label class="popup-basket__label" for="m">m</label>
+        </li>
+        <li class="popup-basket__item">
+          <input class="popup-basket__option" type="radio" name="size" id="l" value="l">
+          <label class="popup-basket__label" for="l">l</label>
+        </li>
+      </ul>
+      <button class="popup-basket__btn" type="submit">Добавить</button>
+    </form>
   </div>
   </body>
 </html>

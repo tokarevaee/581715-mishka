@@ -7,8 +7,7 @@
 <body>
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="http://via.placeholder.com/86x35" width="86"
-           height="35" alt="Mishka">
+      <img src="http://via.placeholder.com/86x35" width="86" height="35" alt="Mishka">
     </a>
     <nav class="main-nav">
       <div class="main-nav__wrapper">
@@ -19,17 +18,17 @@
           <li class="site-list__item">
             <a href="#">Вязание на заказ</a>
           </li>
-          <li class="site-list__item site-list__search">
+          <li class="site-list__item site-list__item--search">
             <a href="#">Поиск по сайту</a>
           </li>
-          <li class="site-list__item site-list__basket">
+          <li class="site-list__item site-list__item--basket">
             <a href="#">Корзина: <span class="basket-volume">пока пусто</span></a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
-  <main class="catalog-page catalog">
+  <main class="catalog-page">
     <div class="catalog-header">
       <h1 class="catalog-header__title">
         Каталог товаров
@@ -38,46 +37,41 @@
     <div class="catalog">
       <ul class="catalog__list">
         <li class="catalog__item">
-          <img class="catalog__image" src="http://via.placeholder.com/260x195" width="260"
-               height="195" alt="Зайчик-попрыгайчик">
-          <b class="catalog__name">Зайчик-попрыгайчик</b>
-          <span class="catalog__options">Рост 30 см, вес 200 г</span>
+          <img class="catalog__image" src="http://via.placeholder.com/260x195" width="260" height="195" alt="Зайчик-попрыгайчик">
+          <a class="catalog__name" href="#">Зайчик-попрыгайчик</a>
+          <p class="catalog__options">Рост 30 см, вес 200 г</p>
           <span class="catalog__price">1 200 руб.</span>
+          <a class="catalog__basket-icon" href="#"></a>
         </li>
         <li class="catalog__item">
-          <img class="catalog__image" src="http://via.placeholder.com/260x195" width="260"
-               height="195" alt="Корзинка для белья">
-          <b class="catalog__name">Корзинка для белья</b>
-          <span class="catalog__options">Диаметр 15 см, высота 10 см</span>
+          <img class="catalog__image" src="http://via.placeholder.com/260x195" width="260" height="195" alt="Корзинка для белья">
+          <a class="catalog__name" href="#">Корзинка для белья</a>
+          <p class="catalog__options">Диаметр 15 см, высота 10 см</p>
           <span class="catalog__price">690 руб.</span>
+          <a class="catalog__basket-icon" href="#"></a>
         </li>
         <li class="catalog__item">
-          <img class="catalog__image" src="http://via.placeholder.com/260x195" width="260"
-               height="195" alt="Большая корзинка для игрушек">
-          <b class="catalog__name">Большая корзинка для игрушек</b>
-          <span class="catalog__options">Диаметр 30 см, высота 30 см</span>
+          <img class="catalog__image" src="http://via.placeholder.com/260x195" width="260" height="195" alt="Большая корзинка для игрушек">
+          <a class="catalog__name" href="#">Большая корзинка для игрушек</a>
+          <p class="catalog__options">Диаметр 30 см, высота 30 см</p>
           <span class="catalog__price">1 500 руб.</span>
-        </li>
-        <li class="catalog__item">
-          <h3 class="catalog__video-title">
-            Процесс производства
-          </h3>
-          <video width="260" height="195" controls="controls" poster="http://via.placeholder.com/260x195">
-            <source src="#">
-          </video>
-          <p class="catalog__video-about">
-            По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-          </p>
-          <button class="botton catalog__bottom">
-            Сделать заказ
-          </button>
+          <a class="catalog__basket-icon" href="#"></a>
         </li>
       </ul>
+      <div class="video-production">
+        <h3 class="video-production__video-title">Процесс производства</h3>
+        <video width="260" height="195" controls="controls" poster="http://via.placeholder.com/260x195">
+          <source src="#">
+        </video>
+        <p class="video-production__video-about">
+          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+        </p>
+        <button class="btn video-production__btn">Сделать заказ</button>
+      </div>
     </div>
   </main>
   <footer class="page-footer">
     <div class="page-footer__social social">
-      <b class="social__title">Давайте дружить!</b>
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
@@ -121,7 +115,7 @@
         <label class="popup-basket__label" for="l">l</label>
       </li>
     </ul>
-    <button class="popup-basket__button">
+    <button class="popup-basket__btn">
       Добавить
     </button>
   </div>

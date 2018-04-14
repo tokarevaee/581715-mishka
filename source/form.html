@@ -7,8 +7,7 @@
 <body>
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="http://via.placeholder.com/86x35" width="86"
-           height="35" alt="Mishka">
+      <img src="http://via.placeholder.com/86x35" width="86" height="35" alt="Mishka">
     </a>
     <nav class="main-nav">
       <div class="main-nav__wrapper">
@@ -19,10 +18,10 @@
           <li class="site-list__item">
             <a href="#">Вязание на заказ</a>
           </li>
-          <li class="site-list__item site-list__search">
+          <li class="site-list__item site-list__item--search">
             <a href="#">Поиск по сайту</a>
           </li>
-          <li class="site-list__item site-list__basket">
+          <li class="site-list__item site-list__item--basket">
             <a href="#">Корзина: <span class="basket-volume">пока пусто</span></a>
           </li>
         </ul>
@@ -37,20 +36,18 @@
     </div>
     <section class="form-order">
       <p class="form-order__note">
-        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить         детали.
+        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы точнить етали.
       </p>
       <form class="form-order__form main-form" method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="main-form__fieldset">
           <legend class="main-form__title">Тип</legend>
           <ul class="main-form__list">
             <li class="main-form__item">
-              <input class="visually-hidden main-form__input-radio" type="radio" name="for-decor"
-                     id="for-decor" checked>
+              <input class="visually-hidden main-form__input-radio" type="radio" name="type" value="for-decor" id="for-decor" checked>
               <label for="for-decor">Аксессуар для интерьера</label>
             </li>
             <li>
-              <input class="visually-hidden main-form__input-radio" type="radio" name="toys"
-                      id="toys">
+              <input class="visually-hidden main-form__input-radio" type="radio" name="type" value="toys" id="toys">
               <label for="toys">Детская игрушка</label>
             </li>
           </ul>
@@ -59,66 +56,59 @@
           <legend class="main-form__title">Цвет</legend>
           <ul class="main-form__list">
             <li class="main-form__item">
-              <input class="visually-hidden main-form__input-checkbox" type="checkbox" name="white"
-                     id="white" checked>
+              <input class="visually-hidden main-form__input-checkbox" type="checkbox" name="white" id="white" checked>
               <label for="white">Белый</label>
             </li>
             <li>
-              <input class="visually-hidden main-form__input-checkbox" type="checkbox" name="gray"
-                     id="gray">
+              <input class="visually-hidden main-form__input-checkbox" type="checkbox" name="gray" id="gray">
               <label for="gray">Серый</label>
             </li>
             <li>
-              <input class="visually-hidden main-form__input-checkbox" type="checkbox" name="tiffani"
-                     id="tiffani">
+              <input class="visually-hidden main-form__input-checkbox" type="checkbox" name="tiffani" id="tiffani">
               <label for="tiffani">«Тиффани»</label>
             </li>
             <li>
-              <input class="visually-hidden main-form__input-checkbox" type="checkbox" name="black"
-                     id="black">
+              <input class="visually-hidden main-form__input-checkbox" type="checkbox" name="black" id="black">
               <label for="black">Черный</label>
             </li>
             <li>
-              <input class="visually-hidden main-form__input-checkbox" type="checkbox" name="pink"
-                     id="pink">
+              <input class="visually-hidden main-form__input-checkbox" type="checkbox" name="pink" id="pink">
               <label for="pink">Розовый</label>
             </li>
             <li>
-              <input class="visually-hidden main-form__input-checkbox" type="checkbox" name="orange"
-                     id="orange">
+              <input class="visually-hidden main-form__input-checkbox" type="checkbox" name="orange" id="orange">
               <label for="orange">Оранжевый</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset  class="main-form__fieldset fio">
+        <fieldset  class="fio-form main-form__fieldset">
           <legend class="main-form__title">ФИО</legend>
-          <label class="main-form__label fio--label" for="first-name">Имя</label>
-          <input class="main-form__input fio--input" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя*" required>
-          <label class="main-form__label fio--label" for="second-name">Фамилия</label>
-          <input class="main-form__input fio--input" id="second-name" type="text" name="second-name" placeholder="Укажите фамилию*" required>
-          <label class="main-form__label fio--label" for="middle-name">Отчество</label>
-          <input class="main-form__input fio--input" id="middle-name" type="text" name="middle-name" placeholder="Отчество, если желаете">
+          <label class="main-form__label fio-form-form--label" for="first-name">Имя</label>
+          <input class="main-form__input fio-form--input" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя*" required>
+          <label class="main-form__label fio-form--label" for="second-name">Фамилия</label>
+          <input class="main-form__input fio-form--input" id="second-name" type="text" name="second-name" placeholder="Укажите фамилию*" required>
+          <label class="main-form__label fio-form--label" for="middle-name">Отчество</label>
+          <input class="main-form__input fio-form--input" id="middle-name" type="text" name="middle-name" placeholder="Отчество, если желаете">
         </fieldset>
-        <fieldset  class="main-form__fieldset tel">
+        <fieldset  class="tel-form main-form__fieldset">
           <legend class="main-form__title">Тел</legend>
-          <input class="main-form__input tel--input" id="tel" type="text" name="tel" placeholder="+7 XXX XX XX*" required>
+          <input class="main-form__input tel-form--input" id="tel" type="text" name="tel" placeholder="+7 XXX XX XX*" required>
         </fieldset>
-        <fieldset  class="main-form__fieldset email">
+        <fieldset  class="email main-form__fieldset">
           <legend class="main-form__title">E-mail</legend>
-          <input class="main-form__input email--input" id="email" type="email" name="email" placeholder="Ваш Email*" required>
+          <input class="main-form__input email-form--input" id="email" type="email" name="email" placeholder="Ваш Email*" required>
         </fieldset>
-        <fieldset  class="main-form__fieldset add">
+        <fieldset  class="add-form main-form__fieldset">
           <legend class="main-form__title">Доп</legend>
-          <textarea class="main-form__textarea add--textarea" id="review" name="review" rows="8" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <textarea class="main-form__textarea add-form--textarea" id="review" name="review" rows="8" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
         <p class="main-form__footnote">*Поля обязательные для заполнения</p>
-        <button class="button form__button">Отправить заказ</button>
+        <button class="btn form__btn" type="submit">Отправить заказ</button>
       </form>
     </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__social social">
-      <b class="social__title">Давайте дружить!</b>
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
