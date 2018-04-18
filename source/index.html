@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="http://via.placeholder.com/86x35" width="86" height="35" alt="Mishka">
-      </a>
+      <div class="page-header__logo page-header__logo--line">
+        <img src="img/logo-mobile.svg" width="85.589" height="35.034" alt="Mishka">
+      </div>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -22,7 +24,7 @@
               <a href="#">Поиск по сайту</a>
             </li>
             <li class="site-list__item site-list__item--basket">
-              <a href="#">Корзина:<span class="basket-volume">пока пусто</span></a>
+              <a href="#">Корзина: <span class="basket-volume">пока пусто</span></a>
             </li>
           </ul>
         </div>
@@ -66,7 +68,7 @@
             <td class="weekend-product__value">15см</td>
           </tr>
         </table>
-        <img class="weekend-product__img" src="http://via.placeholder.com/260x315" width="260" height="315" alt="Вязанные корзинки">
+        <img class="weekend-product__img" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязанные корзинки">
         <span class="weekend-product_price">Цена: 990 руб.</span>
         <a href="#" class="btn weekend-product__btn">Заказать</a>
       </section>
@@ -88,8 +90,8 @@
         </p>
         <cite class="reviews__author-name">Анастасия Красильникова</cite>
         <a class="reviews__tweet" href="">@misssssiskras</a>
-        <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-        <button class="reviews__next" type="button">Следующий отзыв</button>
+        <button class="visually-hidden reviews__prev" type="button">Предыдущий отзыв</button>
+        <button class="visually-hidden reviews__next" type="button">Следующий отзыв</button>
         <a href="#" class="btn reviews__btn">Написать</a>
       </section>
       <section class="contacts">
@@ -114,41 +116,47 @@
       </section>
     </main>
     <footer class="page-footer">
-      <p class="social page-footer__social">
-        <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-          Мы в Вконтакте
+      <div class="social page-footer__social">
+        <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+          <span class="visually-hidden">Мы в Инстаграме</span>
         </a>
         <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-          Мы в Фейсбуке
+          <span class="visually-hidden">Мы в Фейсбуке</span>
         </a>
-        <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
-          Мы в Инстаграме
+        <a class="social__link social__link--twitter" href="#">
+          <span class="visually-hidden">Мы в Твиттере</span>
         </a>
-      </p>
-      <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+      </div>
+      <div class="copyright page-footer__copyright">
+        <a class="copyright__link copyright__link--logo" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
       </div>
     </footer>
-  <div class="popup popup-basket">
-    <form method="get" action="https://echo.htmlacademy.ru">
-      <h3 class="popup-basket__title">Добавить в корзину</h3>
-      <span class="popup-basket__option">Выберете размер:</span>
-      <ul class="popup-basket__list">
-        <li class="popup-basket__item">
-          <input class="popup-basket__option" type="radio" name="size" id="s" value="s">
-          <label class="popup-basket__label" for="s">s</label>
-        </li>
-        <li class="popup-basket__item">
-          <input class="popup-basket__option" type="radio" name="size" id="m" value="m">
-          <label class="popup-basket__label" for="m">m</label>
-        </li>
-        <li class="popup-basket__item">
-          <input class="popup-basket__option" type="radio" name="size" id="l" value="l">
-          <label class="popup-basket__label" for="l">l</label>
-        </li>
-      </ul>
-      <button class="popup-basket__btn" type="submit">Добавить</button>
-    </form>
-  </div>
+    <div class="popup">
+      <form method="get" action="https://echo.htmlacademy.ru">
+        <div class="popup-basket">
+          <h3 class="popup-basket__title">
+            Добавить в корзину
+          </h3>
+        <span class="popup-basket__option">
+          Выберете размер:
+        </span>
+          <ul class="popup-basket__list">
+            <li class="popup-basket__item">
+              <input class="popup-basket__input visually-hidden" type="radio" name="size" id="s" value="s" checked>
+              <label class="popup-basket__label" for="s">s</label>
+            </li>
+            <li class="popup-basket__item">
+              <input class="popup-basket__input visually-hidden" type="radio" name="size" id="m" value="m">
+              <label class="popup-basket__label" for="m">m</label>
+            </li>
+            <li class="popup-basket__item">
+              <input class="popup-basket__input visually-hidden" type="radio" name="size" id="l" value="l">
+              <label class="popup-basket__label" for="l">l</label>
+            </li>
+          </ul>
+          <button class="popup-basket__btn" type="submit">Добавить</button>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
