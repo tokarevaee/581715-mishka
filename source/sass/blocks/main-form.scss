@@ -1,13 +1,13 @@
-.main-form{
+.main-form {
 
 }
 
-.main-form__fieldset{
+.main-form__fieldset {
   border: none;
   border-top: $color-blue solid 1px;
 }
 
-.main-form__title{
+.main-form__title {
   color: $color-blue;
   font-size: 17px;
   line-height: 17px;
@@ -16,41 +16,39 @@
   margin-bottom: 25px;
 }
 
-.main-form__list{
-  margin:0;
+.main-form__list {
+  margin: 0;
   padding: 0;
 }
 
-.main-form__item{
+.main-form__item {
   padding-left: 60px;
   margin-bottom: 25px;
 }
 
-.main-form__label{
+.main-form__label {
   color: $color-main;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
 }
 
-.main-form__input-radio{
+.main-form__input-radio {
 
 }
 
-.main-form__input-checkbox{
+.main-form__input-checkbox {
 
 }
 
-
-.main-form__footnote{
+.main-form__footnote {
   color: $color-light-black;
   font-size: 14px;
   line-height: 16px;
 }
 
-
 .main-form__input--tel,
-.main-form__input--email{
+.main-form__input--email {
   border: none;
   border-bottom: $color-main solid 2px;
   @include placeholder {
@@ -62,7 +60,7 @@
   }
 }
 
-.main-form__textarea--textarea{
+.main-form__textarea--textarea {
   border: $color-main solid 2px;
   @include placeholder {
     color: $color-light-black;

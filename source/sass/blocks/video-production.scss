@@ -1,4 +1,4 @@
-.video-production{
+.video-production {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -6,8 +6,9 @@
   margin-bottom: 30px;
   width: 260px;
 }
-.video-production__video-title{
-  margin:0;
+
+.video-production__video-title {
+  margin: 0;
   padding: 25px 0;
   font-size: 17px;
   line-height: 24px;
@@ -15,19 +16,20 @@
   padding-left: 90px;
 }
 
-.video-production__video{
+.video-production__video {
   margin-bottom: 33px;
 }
 
-.video-production__video-about{
+.video-production__video-about {
   padding: 0;
   margin: 0 35px;
   margin-bottom: 50px;
   font-size: 13px;
   line-height: 24px;
 }
-.video-production__btn{
-  padding:0;
+
+.video-production__btn {
+  padding: 0;
   margin: 0 35px;
   min-width: 192px;
 }

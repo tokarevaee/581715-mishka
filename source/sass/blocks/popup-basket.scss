@@ -1,11 +1,11 @@
-.popup-basket{
+.popup-basket {
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 336px;
 }
 
-.popup-basket__list{
+.popup-basket__list {
   margin: 0;
   padding: 0;
   display: flex;
@@ -13,8 +13,7 @@
   margin-bottom: 30px;
 }
 
-
-.popup-basket__label{
+.popup-basket__label {
   font-size: 15px;
   line-height: 30px;
   color: #444444;
@@ -22,20 +21,20 @@
   border: #ececec solid 1px;
 }
 
-.popup-basket__title{
+.popup-basket__title {
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
 }
 
-.popup-basket__item{
+.popup-basket__item {
   font-size: 17px;
   line-height: 20px;
   color: #444444;
   text-transform: uppercase;
 }
 
-.popup-basket__btn{
+.popup-basket__btn {
   color: #ffffff;
   font-family: $family;
   display: block;
@@ -55,11 +54,11 @@
   text-transform: uppercase;
 }
 
-.popup-basket__input:checked ~ .popup-basket__label{
+.popup-basket__input:checked ~ .popup-basket__label {
   border: $color-blue solid 1px;
 }
 
-.popup-basket__option{
+.popup-basket__option {
   font-size: 15px;
   line-height: 30px;
   color: #444444;

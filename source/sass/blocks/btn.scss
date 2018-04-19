@@ -1,4 +1,4 @@
-.btn{
+.btn {
   font-family: $family;
   display: block;
   box-sizing: border-box;
@@ -18,13 +18,13 @@
   text-transform: uppercase;
 }
 
-.btn{
-&:hover{
-  color: #ffffff;
-  background-color: $color-light-black;
-}
-&:active{
-  color: rgba(255, 255, 255, 0.3);
-  background-color: $color-light-black;
-}
+.btn {
+  &:hover {
+    color: #ffffff;
+    background-color: $color-light-black;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $color-light-black;
+  }
 }

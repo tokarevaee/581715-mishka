@@ -1,10 +1,10 @@
-.weekend-product{
+.weekend-product {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.weekend-product__title{
+.weekend-product__title {
   text-transform: uppercase;
   color: $color-blue;
   font-size: 17px;
@@ -12,36 +12,36 @@
   font-weight: bold;
 }
 
-.weekend-product__description{
+.weekend-product__description {
   font-size: 15px;
   line-height: 24px;
   color: #444444;
 }
 
-.weekend-product__about{
+.weekend-product__about {
   font-size: 15px;
   line-height: 24px;
   color: #444444;
 }
 
-.weekend-product__about tr{
+.weekend-product__about tr {
   border-bottom: #000000 solid 1px;
   padding: 10px 0;
 }
 
-
-.weekend-product__img{
+.weekend-product__img {
   display: block;
   margin-bottom: 29px;
 }
 
-.weekend-product__price{
+.weekend-product__price {
   font-size: 17px;
   line-height: 24px;
   color: #444444;
   font-weight: bold;
   margin-bottom: 30px;
 }
-.weekend-product__btn{
+
+.weekend-product__btn {
   margin-bottom: 30px;
 }
