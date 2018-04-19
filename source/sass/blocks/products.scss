@@ -1,0 +1,39 @@
+.products{
+
+}
+
+.products__decoration{
+  min-height: 103px;
+  background-color: #63d1bb;
+  padding: 30px;
+}
+
+.products__decoration--image{
+  background-image: url("../img/icon-interior.svg");
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  background-position: right 30px top 30px;
+  right: 50px;
+}
+
+.products__toys{
+  min-height: 103px;
+  background-color: #56c3b2;
+  padding: 30px;
+}
+
+.products__toys--image{
+  background-image: url("../img/icon-toy.svg");
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  background-position: right 30px top 30px;
+  right: 50px;
+}
+
+.products a{
+  color: #FFFFFF;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}

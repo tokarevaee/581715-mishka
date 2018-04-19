@@ -53,13 +53,10 @@
   font-size: 17px;
   padding: 15px 0;
   text-transform: uppercase;
-
 }
-
 
 .popup-basket__input:checked ~ .popup-basket__label{
   border: $color-blue solid 1px;
-
 }
 
 .popup-basket__option{
