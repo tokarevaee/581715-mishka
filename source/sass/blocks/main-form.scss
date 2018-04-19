@@ -39,6 +39,7 @@
 .main-form__input--email {
   border: none;
   border-bottom: $color-main solid 2px;
+
   @include placeholder {
     color: $color-light-black;
     font-size: 17px;
@@ -50,6 +51,7 @@
 
 .main-form__textarea--textarea {
   border: $color-main solid 2px;
+  
   @include placeholder {
     color: $color-light-black;
     font-size: 17px;
