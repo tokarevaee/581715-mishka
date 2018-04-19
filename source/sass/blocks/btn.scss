@@ -19,12 +19,12 @@
 }
 
 .btn{
- &:hover{
-   color: #ffffff;
-   background-color: $color-light-black;
-  }
-  &:active{
-  color: rgba(255, 255, 255, 0.3);
-  background-color: $color-light-black;
-  }
+&:hover{
+ color: #ffffff;
+ background-color: $color-light-black;
+}
+&:active{
+color: rgba(255, 255, 255, 0.3);
+background-color: $color-light-black;
+}
 }
