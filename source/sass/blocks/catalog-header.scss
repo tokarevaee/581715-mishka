@@ -1,0 +1,17 @@
+.catalog-header {
+  background-color: $color-background;
+  height: 175px;
+  margin-bottom: 30px;
+  padding: 75px 0;
+  box-sizing: border-box;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.catalog-header__title {
+  color: $color-main;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: bold;
+  margin: 0;
+}

@@ -1,0 +1,23 @@
+.index-slogan {
+  min-width: 320px;
+  margin: 0 auto;
+  min-height: 283px;
+}
+
+.index-slogan__title {
+  font-size: 27px;
+  line-height: 30px;
+  color: $color-main;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  padding: 75px 35px 0 35px;
+}
+
+.index-slogan--image {
+  background-image: url("../img/hero-mobile@1x.jpg");
+  width: 320px;
+  height: 373px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
