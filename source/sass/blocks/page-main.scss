@@ -3,4 +3,24 @@
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
+  font-family: $family;
+  margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main--slogan {
+    font-size: 43px;
+    line-height: 50px;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main--slogan {
+    font-size: 53px;
+    line-height: 57px;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
 }

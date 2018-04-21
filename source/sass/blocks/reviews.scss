@@ -2,6 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin: 0 auto;
+  width: 260px;
+  margin-bottom: 30px;
 }
 
 .reviews__text {
@@ -22,7 +25,7 @@
   font-size: 15px;
   line-height: 24px;
   color: #444444;
-  margin-bottom: 30px;
+  display: block;
 }
 
 .contacts__list td {
@@ -35,7 +38,7 @@
 
 .reviews__arrow {
   display: flex;
-  margin-bottom: 30px;
+  //margin-bottom: 30px;
 }
 
 .reviews__prev,
@@ -58,4 +61,39 @@
 
 .reviews__next--icon {
   background-image: url("../img/icon-right-arrow.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .reviews  {
+    display: flex;
+    flex-direction: row;
+    width: 668px;
+    height: 360px;
+    padding: 50px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: -20px -20px;
+  }
+
+  .reviews__nav{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    height: 360px;
+  }
+
+  .reviews__text{
+    flex-grow: 1;
+    flex-basis: 500px;
+  }
+  .reviews__btn{
+    align-self: flex-end;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .reviews  {
+
+  }
 }

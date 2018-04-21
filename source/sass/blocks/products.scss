@@ -1,24 +1,33 @@
-.products__decoration {
-  min-height: 103px;
-  background-color: #63d1bb;
-  padding: 30px;
+.products {
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
-.products__decoration--image {
+.products a {
+  display: block;
+  box-sizing: border-box;
+}
+
+.products__item {
+  height: 103px;
+  min-width: 320px;
+  background-color: #63d1bb;
+  padding: 30px 0 0 30px ;
+  vertical-align: middle;
+  display: block;
+}
+
+.products__item--decoration-image {
+  background-color: #63d1bb;
   background-image: url("../img/icon-interior.svg");
-  background-size: 60px 60px;
+  background-size: 40px 60px;
   background-repeat: no-repeat;
   background-position: right 30px top 30px;
   right: 50px;
 }
 
-.products__toys {
-  min-height: 103px;
+.products__item--toy-image {
   background-color: #56c3b2;
-  padding: 30px;
-}
-
-.products__toys--image {
   background-image: url("../img/icon-toy.svg");
   background-size: 60px 60px;
   background-repeat: no-repeat;
@@ -26,10 +35,35 @@
   right: 50px;
 }
 
-.products a {
+.products h2 {
+  margin: 0;
   color: #ffffff;
   font-size: 19px;
   line-height: 24px;
   font-weight: bold;
-  text-transform: uppercase;
+  width: 130px;
+}
+
+@media (min-width: $tablet-width) {
+  .products {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .products__item {
+    width: 334px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 70px;
+  }
+  .products__item {
+    width: 525px;
+  }
 }

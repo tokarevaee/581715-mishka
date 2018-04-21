@@ -1,6 +1,15 @@
+.advantages{
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  margin: 0 auto;
+}
+
 .advantages__list {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .advantages__item {
@@ -8,46 +17,60 @@
   line-height: 20px;
   font-weight: bold;
   padding-top: 85px;
+  background-size: 35px 35px;
+  background-repeat: no-repeat;
+  background-position: top 25px left 0;
+  width: 260px;
 }
 
 .advantages__item--flower {
   background-image: url("../img/icon-feature-flower.svg");
-  background-size: 35px 35px;
-  background-repeat: no-repeat;
-  background-position: top 25px left 0;
 }
 
 .advantages__item--money {
   background-image: url("../img/icon-feature-money.svg");
-  background-size: 35px 35px;
-  background-repeat: no-repeat;
-  background-position: top 25px left 0;
 }
 
 .advantages__item--heart {
   background-image: url("../img/icon-feature-heart.svg");
-  background-size: 35px 35px;
-  background-repeat: no-repeat;
-  background-position: top 25px left 0;
 }
 
 .advantages__item--ball {
   background-image: url("../img/icon-feature-ball.svg");
-  background-size: 35px 35px;
-  background-repeat: no-repeat;
-  background-position: top 25px left 0;
 }
 
 .advantages__item--rocket {
   background-image: url("../img/icon-feature-rocket.svg");
-  background-size: 35px 35px;
-  background-repeat: no-repeat;
-  background-position: top 25px left 0;
 }
 
 .advantages__item--gift {
   background-image: url("../img/icon-feature-gift.svg");
-  background-size: 35px 35px;
-  background-repeat: no-repeat;
-  background-position: top 25px left 0;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    width: 668px;
+    height: 500px;
+    margin-bottom: 30px;
+  }
+  .advantages__list {
+    flex-wrap: wrap;
+  }
+  .advantages__item {
+    width: 334px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    width: 700px;
+    height: 500px;
+    margin-bottom: 50px;
+  }
+  .advantages__list {
+    flex-wrap: wrap;
+  }
+  .advantages__item {
+    width: 350px;
+  }
 }

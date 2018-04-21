@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/opensans.woff2") format("woff2");
+  src: url("../fonts/opensans.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -8,6 +9,7 @@
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/opensansbold.woff2") format("woff2");
+  src: url("../fonts/opensansbold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
@@ -32,4 +34,14 @@ ul {
 
 img {
   max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+div, ul, li, a, section{
+  outline: 1px red solid;
 }
