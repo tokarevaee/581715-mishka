@@ -1,5 +1,6 @@
 .index-slogan__wrapper {
-  background-color: #fbfbfb;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e7e7e7;
 }
 
 .index-slogan {
@@ -30,17 +31,35 @@
   .index-slogan {
     width: 500px;
   }
+
   .index-slogan--image {
     width: 500px;
   }
+
+  .index-slogan__wrapper {
+    padding-top: 80px;
+    margin-top: -80px;
+  }
+
+  .index-slogan__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
 }
 
 @media (min-width: $desktop-width) {
+
   .index-slogan {
     width: 610px;
   }
 
   .index-slogan--image {
     width: 610px;
+  }
+
+  .index-slogan__title {
+    font-size: 53px;
+    line-height: 57px;
   }
 }
