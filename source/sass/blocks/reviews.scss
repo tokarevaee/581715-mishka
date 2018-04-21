@@ -28,17 +28,8 @@
   display: block;
 }
 
-.contacts__list td {
-  padding-left: 20px;
-}
-
-.contacts__list {
-  margin-bottom: 30px;
-}
-
 .reviews__arrow {
   display: flex;
-  //margin-bottom: 30px;
 }
 
 .reviews__prev,
@@ -47,7 +38,6 @@
   border: solid 1px #ececec;
   min-width: 130px;
   min-height: 50px;
-
   background-color: #ffffff;
   background-repeat: no-repeat;
   background-position: center;
@@ -67,6 +57,8 @@
   .reviews  {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 668px;
     height: 360px;
     padding: 50px;
@@ -75,25 +67,38 @@
     background-position: -20px -20px;
   }
 
-  .reviews__nav{
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    height: 360px;
-  }
-
   .reviews__text{
-    flex-grow: 1;
-    flex-basis: 500px;
+    width: 668px;
   }
   .reviews__btn{
-    align-self: flex-end;
+    order: -1;
   }
-
+  .reviews__title {
+    order: -2;
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .reviews  {
+  .reviews {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 875px;
+    height: 300px;
+    padding: 80px 0 80px 175px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: -20px -20px;
+  }
 
+  .reviews__text{
+    width: 875px;
+  }
+  .reviews__btn{
+    order: -1;
+  }
+  .reviews__title {
+    order: -2;
   }
 }
