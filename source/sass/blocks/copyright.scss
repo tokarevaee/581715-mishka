@@ -24,3 +24,17 @@
   right: -60px;
   position: absolute;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
