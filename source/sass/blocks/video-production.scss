@@ -1,19 +1,31 @@
 .video-production {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   border: #ededed solid 1px;
-  margin-bottom: 30px;
+  margin: 0 auto;
   width: 260px;
 }
 
 .video-production__video-title {
   margin: 0;
+  height: 100px;
   padding: 25px 0;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
   padding-left: 90px;
+  position: relative;
+  box-sizing: border-box;
+  &::before {
+    content: "";
+    background-image: url("../img/icon-video.svg");
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 30px;
+    left: 30px;
+  }
 }
 
 .video-production__video {
@@ -22,14 +34,91 @@
 
 .video-production__video-about {
   padding: 0;
-  margin: 0 35px;
+  margin-top: 0;
   margin-bottom: 50px;
   font-size: 13px;
   line-height: 24px;
+  width: 190px;
 }
 
 .video-production__btn {
   padding: 0;
-  margin: 0 35px;
+  margin-bottom: 35px;
   min-width: 192px;
+}
+
+@media (min-width: $tablet-width) {
+  .video-production {
+    width: 668px;
+  }
+
+  .video-production__video {
+    width: 668px;
+    height: 456px;
+    order: -1;
+    margin-bottom: 0;
+  }
+
+  .video-production__video-about {
+    width: 583px;
+    font-size: 15px;
+    margin-bottom: 45px;
+  }
+
+  .video-production__btn {
+    min-width: 583px;
+  }
+
+  .video-production__video-title {
+    width: 583px;
+    padding: 43px 0;
+    font-size: 20px;
+    padding-left: 60px;
+    &:before {
+      top: 35px;
+      left: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-production {
+    width: 1050px;
+    height: 461px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .video-production__video {
+    width: 684px;
+    height: 461px;
+    order: -1;
+    margin-bottom: 0;
+    flex-grow: 1;
+  }
+
+  .video-production__video-about {
+    width: 232px;
+    font-size: 15px;
+    margin-bottom: 45px;
+  }
+
+  .video-production__btn {
+    min-width: 232px;
+    margin-top: auto;
+  }
+
+  .video-production__video-title {
+    width: 232px;
+    padding: 43px 0;
+    font-size: 20px;
+    margin: 50px 0;
+
+    &:before {
+      top: 0;
+      left: 0;
+    }
+  }
 }

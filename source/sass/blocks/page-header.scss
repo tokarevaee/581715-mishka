@@ -34,6 +34,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: -80px;
   }
 
   .page-header__logo {
@@ -55,5 +56,6 @@
 
   .page-header {
     width: 1050px;
+    margin-bottom: -80px;
   }
 }

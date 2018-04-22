@@ -1,6 +1,6 @@
 .catalog-header {
   background-color: $color-background;
-  height: 175px;
+  min-height: 175px;
   margin-bottom: 30px;
   padding: 75px 0;
   box-sizing: border-box;
@@ -14,4 +14,34 @@
   line-height: 30px;
   font-weight: bold;
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-header {
+    background-color: $color-background;
+    min-height: 230px;
+    margin-bottom: 80px;
+    padding: 100px 0;
+  }
+
+  .catalog-header__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-header {
+    background-color: $color-background;
+    min-height: 250px;
+    margin-bottom: 130px;
+    padding: 100px 0;
+  }
+
+
+  .catalog-header__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
 }
