@@ -1,11 +1,3 @@
-.fio-form--input {
-  border: none;
-  border-bottom: $color-main solid 2px;
-
-  @include placeholder {
-    color: $color-light-black;
-    font-size: 17px;
-    line-height: 18px;
-    box-sizing: border-box;
-  }
+.fio-form--label {
+  margin-bottom: 20px;
 }
