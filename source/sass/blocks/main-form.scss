@@ -151,7 +151,7 @@
     position: absolute;
     margin-top: 20px;
 
-    &:after {
+    &::after {
       display: none;
     }
   }
