@@ -2,6 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .weekend-product__title {
@@ -12,16 +15,27 @@
   font-weight: bold;
 }
 
+.weekend-product__name {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
 .weekend-product__description {
   font-size: 15px;
   line-height: 24px;
   color: #444444;
+  width: 290px;
+  margin: 50px 0;
 }
 
 .weekend-product__about {
   font-size: 15px;
   line-height: 24px;
   color: #444444;
+  width: 336px;
+  text-align: left;
+  margin-bottom: 30px;
 }
 
 .weekend-product__about tr {
@@ -31,7 +45,6 @@
 
 .weekend-product__img {
   display: block;
-  margin-bottom: 29px;
 }
 
 .weekend-product__price {
@@ -39,9 +52,106 @@
   line-height: 24px;
   color: #444444;
   font-weight: bold;
-  margin-bottom: 30px;
+  text-align: center;
+  margin: 30px 0;
+  display: block;
 }
 
 .weekend-product__btn {
-  margin-bottom: 30px;
+  width: 260px;
+}
+
+.weekend-product__main-info {
+  width: 260px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .weekend-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 668px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 50px;
+  }
+
+  .weekend-product__btn {
+    width: 290px;
+  }
+
+  .weekend-product__main-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .weekend-product__title {
+    width: 85px;
+  }
+
+  .weekend-product__main-info {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    width: 290px;
+  }
+
+  .weekend-product__img {
+    position: absolute;
+    width: 334px;
+    height: 404px;
+    bottom: 0;
+    right: 0;
+  }
+
+  .weekend-product__name {
+    font-size: 43px;
+    line-height: 50px;
+    font-weight: bold;
+  }
+
+  .weekend-product__price {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .weekend-product {
+    width: 1050px;
+    display: block;
+    margin-bottom: 70px;
+  }
+
+  .weekend-product__main-info {
+    width: 290px;
+    padding-left: 175px;
+  }
+
+  .weekend-product__title {
+    order: -1;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+  }
+
+  .weekend-product__name {
+    font-size: 53px;
+    line-height: 57px;
+    font-weight: bold;
+  }
+
+  .weekend-product__main-title {
+    justify-content: flex-start;
+  }
+
+  .weekend-product__img {
+    width: 525px;
+    height: 636px;
+    z-index: -1;
+  }
 }

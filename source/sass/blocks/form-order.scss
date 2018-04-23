@@ -1,5 +1,27 @@
+.form-order {
+  width: 260px;
+  margin: 0 auto;
+}
+
 .form-order__note {
   color: $color-light-black;
   font-size: 13px;
   line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-order {
+    width: 668px;
+  }
+
+  .form-order__note {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-order {
+    width: 1050px;
+  }
 }
