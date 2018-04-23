@@ -51,8 +51,7 @@
 }
 
 .main-form__input-radio + .main-form__label--radio {
-
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     left: -60px;
@@ -62,10 +61,9 @@
     border-radius: 50%;
     border: 2px solid #000000;
   }
-
 }
 
-.main-form__input-radio:checked + .main-form__label--radio:after {
+.main-form__input-radio:checked + .main-form__label--radio::after {
   content: "";
   position: absolute;
   top: 17px;
@@ -77,8 +75,7 @@
 }
 
 .main-form__input-checkbox + .main-form__label--checkbox {
-
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     left: -60px;
@@ -87,10 +84,9 @@
     height: 38px;
     border: 2px solid #000000;
   }
-
 }
 
-.main-form__input-checkbox:checked + .main-form__label--checkbox:after {
+.main-form__input-checkbox:checked + .main-form__label--checkbox::after {
   content: "";
   position: absolute;
   top: 7px;
@@ -150,15 +146,16 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .main-form__title {
     margin: 0;
     position: absolute;
     margin-top: 20px;
+
     &:after {
       display: none;
     }
   }
+
   .main-form__fieldset {
     padding: 30px 0;
     display: flex;
@@ -174,11 +171,12 @@
 
   .main-form__fieldset--color {
     background-color: $color-background;
+
     & ul {
       height: 250px;
     }
-
   }
+
   .main-form__fieldset--name div,
   .main-form__fieldset--tel input,
   .main-form__fieldset--mail input,
@@ -186,6 +184,7 @@
     width: 500px;
     margin-left: auto;
   }
+
   .main-form__fieldset--tel,
   .main-form__fieldset--mail {
     background-color: $color-background;
@@ -206,11 +205,9 @@
     font-size: 17px;
     line-height: 30px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
-
   .main-form__title {
     margin-left: 20px;
   }
@@ -232,7 +229,6 @@
     & ul {
       height: 220px;
     }
-
   }
 
   .main-form__input,

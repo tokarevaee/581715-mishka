@@ -1,4 +1,4 @@
-.advantages{
+.advantages {
   display: flex;
   flex-direction: column;
   width: 260px;
@@ -54,9 +54,11 @@
     height: 500px;
     margin-bottom: 80px;
   }
+
   .advantages__list {
     flex-wrap: wrap;
   }
+
   .advantages__item {
     width: 334px;
   }
@@ -68,9 +70,11 @@
     height: 500px;
     margin-bottom: 90px;
   }
+
   .advantages__list {
     flex-wrap: wrap;
   }
+
   .advantages__item {
     width: 350px;
   }

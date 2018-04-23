@@ -41,14 +41,13 @@
     width: 170px;
     order: -3;
   }
+
   .page-header p {
     display: block;
   }
-
 }
 
 @media (min-width: $desktop-width) {
-
   .page-header__logo {
     width: 170px;
     order: -3;
