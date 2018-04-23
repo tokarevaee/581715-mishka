@@ -50,7 +50,6 @@
   padding: 20px 0;
 }
 
-
 .main-form__input-radio + .main-form__label--radio {
 
   &:before {
@@ -103,7 +102,6 @@
   border-right: none;
   background: transparent;
   transform: rotate(-45deg);
-
 }
 
 .main-form__input {
@@ -112,6 +110,10 @@
   padding-bottom: 20px;
   border-bottom: 2px solid black;
   width: 100%;
+  background-color: transparent;
+  padding-left: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
 
   @include placeholder {
     font-size: 17px;
@@ -137,24 +139,108 @@
   width: 100%;
   box-sizing: border-box;
   margin-bottom: 15px;
+  padding: 10px;
 
   @include placeholder {
     color: $color-placeholder;
     font-size: 17px;
     line-height: 18px;
     box-sizing: border-box;
-    padding: 10px;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .main-form__fieldset:nth-child(2n) {
+
+  .main-form__title {
+    margin: 0;
+    position: absolute;
+    margin-top: 20px;
+    &:after {
+      display: none;
+    }
+  }
+  .main-form__fieldset {
+    padding: 30px 0;
+    display: flex;
+  }
+
+  .main-form__list {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: auto;
+  }
+
+  .main-form__fieldset--color {
+    background-color: $color-background;
+    & ul {
+      height: 250px;
+    }
+
+  }
+  .main-form__fieldset--name div,
+  .main-form__fieldset--tel input,
+  .main-form__fieldset--mail input,
+  .main-form__fieldset--add textarea {
+    width: 500px;
+    margin-left: auto;
+  }
+  .main-form__fieldset--tel,
+  .main-form__fieldset--mail {
     background-color: $color-background;
   }
+
+  .main-form__item {
+    box-sizing: content-box;
+  }
+
+  .main-form > div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .main-form__footnote {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
 }
 
 @media (min-width: $desktop-width) {
-  .main-form {
+
+  .main-form__title {
+    margin-left: 20px;
+  }
+
+  .main-form__fieldset {
+    padding: 50px 0;
+  }
+
+  .main-form__list,
+  .main-form__fieldset--name div,
+  .main-form__fieldset--tel input,
+  .main-form__fieldset--mail input,
+  .main-form__fieldset--add textarea {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  .main-form__fieldset--color {
+    & ul {
+      height: 220px;
+    }
 
   }
+
+  .main-form__input,
+  .main-form__textarea--textarea {
+    @include placeholder {
+      font-size: 19px;
+      line-height: 19px;
+    }
+  }
 }
+

@@ -49,7 +49,7 @@
         Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
       </p>
       <form class="form-order__form main-form" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="main-form__fieldset">
+        <fieldset class="main-form__fieldset main-form__fieldset--type">
           <legend class="main-form__title">Тип</legend>
           <ul class="main-form__list">
             <li class="main-form__item">
@@ -62,7 +62,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="main-form__fieldset">
+        <fieldset class="main-form__fieldset main-form__fieldset--color">
           <legend class="main-form__title">Цвет</legend>
           <ul class="main-form__list">
             <li class="main-form__item">
@@ -91,29 +91,33 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset  class="fio-form main-form__fieldset">
+        <fieldset  class="fio-form main-form__fieldset main-form__fieldset--name">
           <legend class="main-form__title">ФИО</legend>
-          <label class="main-form__label fio-form-form--label" for="first-name">Имя:</label>
-          <input class="main-form__input fio-form--input" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя*" required>
-          <label class="main-form__label fio-form--label" for="second-name">Фамилия:</label>
-          <input class="main-form__input fio-form--input" id="second-name" type="text" name="second-name" placeholder="Укажите фамилию*" required>
-          <label class="main-form__label fio-form--label" for="middle-name">Отчество:</label>
-          <input class="main-form__input fio-form--input" id="middle-name" type="text" name="middle-name" placeholder="Отчество, если желаете">
+          <div>
+            <label class="main-form__label fio-form-form--label" for="first-name">Имя:</label>
+            <input class="main-form__input fio-form--input" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя*" required>
+            <label class="main-form__label fio-form--label" for="second-name">Фамилия:</label>
+            <input class="main-form__input fio-form--input" id="second-name" type="text" name="second-name" placeholder="Укажите фамилию*" required>
+            <label class="main-form__label fio-form--label" for="middle-name">Отчество:</label>
+            <input class="main-form__input fio-form--input" id="middle-name" type="text" name="middle-name" placeholder="Отчество, если желаете">
+          </div>
         </fieldset>
-        <fieldset  class="main-form__fieldset">
+        <fieldset  class="main-form__fieldset main-form__fieldset--tel">
           <legend class="main-form__title">Тел</legend>
           <input class="main-form__input main-form__input--tel" id="tel" type="tel" name="tel" placeholder="+7 XXX XX XX*" required>
         </fieldset>
-        <fieldset  class="email main-form__fieldset">
+        <fieldset  class="email main-form__fieldset main-form__fieldset--mail">
           <legend class="main-form__title">E-mail</legend>
           <input class="main-form__input main-form__input--email" id="email" type="email" name="email" placeholder="Ваш Email*" required>
         </fieldset>
-        <fieldset  class="add-form main-form__fieldset">
+        <fieldset  class="add-form main-form__fieldset main-form__fieldset--add">
           <legend class="main-form__title">Доп</legend>
           <textarea class="main-form__textarea--textarea" id="review" name="review" rows="8" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
-        <p class="main-form__footnote">*Поля обязательные для заполнения</p>
-        <button class="btn form__btn" type="submit">Отправить заказ</button>
+        <div>
+          <p class="main-form__footnote">*Поля обязательные для заполнения</p>
+          <button class="btn form__btn" type="submit">Отправить заказ</button>
+        </div>
       </form>
     </section>
   </main>
