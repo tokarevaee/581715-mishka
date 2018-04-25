@@ -2,7 +2,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 336px;
+  justify-content: center;
+  width: 360px;
+  height: 336px;
+  padding: 30px;
+  box-shadow: 0 5px 10px 4px #c6c6c6;
+  margin: 0 auto;
+  border: 1px solid #c6c6c6;
+  margin-left: -180px;
+  margin-top: -168px;
+  background-color: #ffffff;
+}
+
+.popup-basket__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-transform: uppercase;
 }
 
 .popup-basket__list {
@@ -10,21 +27,8 @@
   padding: 0;
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
-}
-
-.popup-basket__label {
-  font-size: 15px;
-  line-height: 30px;
-  color: #444444;
-  padding: 20px 30px;
-  border: #ececec solid 1px;
-}
-
-.popup-basket__title {
-  font-size: 25px;
-  line-height: 30px;
-  font-weight: bold;
+  margin-bottom: 45px;
+  width: 260px;
 }
 
 .popup-basket__item {
@@ -32,6 +36,29 @@
   line-height: 20px;
   color: #444444;
   text-transform: uppercase;
+  margin-left: 7px;
+  flex-basis: 100%;
+  text-align: center;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.popup-basket__label {
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+  padding: 20px 0;
+  border: #ececec solid 2px;
+  cursor: pointer;
+  display: block;
+  &:hover {
+    border: #c7c7c7 solid 2px;
+  }
+}
+
+.popup-basket__input:checked ~ .popup-basket__label {
+  border: $color-blue solid 2px;
 }
 
 .popup-basket__btn {
@@ -54,13 +81,41 @@
   text-transform: uppercase;
 }
 
-.popup-basket__input:checked ~ .popup-basket__label {
-  border: $color-blue solid 1px;
-}
-
 .popup-basket__option {
   font-size: 15px;
   line-height: 30px;
   color: #444444;
   margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .popup-basket {
+    width: 568px;
+    height: 340px;
+    margin-left: -282px;
+    margin-top: -170px;
+    background-color: #ffffff;
+    padding: 50px;
+  }
+  br {
+    display: none;
+  }
+
+  .popup-basket__title {
+    font-size: 30px;
+    line-height: 57px;
+  }
+
+  .popup-basket__option {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .popup-basket__list {
+    width: 350px;
+  }
+
+  .popup-basket__btn {
+    width: 350px;
+  }
 }

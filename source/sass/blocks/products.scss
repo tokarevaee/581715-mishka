@@ -5,17 +5,10 @@
 }
 
 .products__item--wrapper {
-  //height: 103px;
-  //padding: 30px 0;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
   align-items: center;
-
-  &:hover {
-    height: calc(100% + 5px);
-    padding: 25px 0;
-  }
 
   &:hover svg {
     opacity: 0.7;
@@ -30,7 +23,6 @@ a.products__item {
   display: block;
   width: 260px;
   margin: 0 auto;
-
 }
 
 .products svg {
@@ -40,12 +32,10 @@ a.products__item {
 
 .products__item--decoration {
   background-color: #63d1bb;
-
 }
 
 .products__item--toy {
   background-color: #56c3b2;
-
 }
 
 .products h2 {
@@ -66,25 +56,22 @@ a.products__item {
     margin: 0 auto;
     margin-bottom: 50px;
     margin-top: -120px;
-    //width: 668px;
+    width: 668px;
   }
 
   .products__item--wrapper {
-
-
+    width: 334px;
+    min-height: 103px;
+    padding: 20px;
+    box-sizing: border-box;
+    &:hover {
+      transform: translateY(-5px);
+    }
   }
 
   a.products__item {
-    width: 334px;
-    padding: 35px;
-    min-height: 103px;
+    width: 100%;
     box-sizing: border-box;
-
-    &:hover {
-      min-height: 107px;
-      padding: 33px;
-      padding-top: 28px;
-    }
   }
 
   .products h2 {
@@ -97,6 +84,9 @@ a.products__item {
   .products {
     margin-bottom: 70px;
     width: 1050px;
+  }
+  .products__item--wrapper {
+    width: 525px;
   }
 
   a.products__item {

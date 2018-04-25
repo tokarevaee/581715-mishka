@@ -4,7 +4,6 @@
   align-items: center;
   width: 260px;
   margin: 0 auto;
-
 }
 
 .page-footer--wrapper {
@@ -39,6 +38,14 @@
     flex-grow: 1;
     display: block;
     text-align: left;
+    &:hover .logo-footer{
+      fill: $color-blue;
+    }
+
+    &:active .logo-footer{
+      fill: $color-blue;
+      opacity: 0.3;
+    }
   }
 
   .page-footer__social {

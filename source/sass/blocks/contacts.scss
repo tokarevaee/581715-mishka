@@ -22,10 +22,17 @@
   margin-bottom: 40px;
 }
 
-.contacts__map {
+.contacts__map--google {
   width: 100%;
   min-height: 455px;
+}
+
+.contacts__map {
   margin-bottom: 40px;
+  background-image: url("../img/map-mobile@1x.jpg");
+  height: 455px;
+  width: 100%;
+  z-index: 30;
 }
 
 .contacts__address {
@@ -34,7 +41,18 @@
 
 .contacts__mail {
   padding-left: 30px;
+
+}
+.contacts__mail a {
   box-shadow: 0 1px 0 0 $color-blue;
+  color: #444444;
+  &:hover {
+    color: $color-blue;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__value {
@@ -86,6 +104,7 @@
   }
 
   .contacts__map {
+    background-size: cover;
     width: 100%;
     min-height: 460px;
     margin-bottom: 60px;
@@ -126,10 +145,15 @@
 
   .contacts__map {
     width: 525px;
-    min-height: 455px;
+    height: 455px;
     flex-grow: 1;
     order: 1;
     margin-bottom: 0;
+  }
+
+  .contacts__map--google {
+    width: 525px;
+    height: 496px;
   }
 
   .contacts__title {

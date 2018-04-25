@@ -46,6 +46,14 @@
   background-position: center;
   width: 50px;
   height: 26px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .reviews__prev--icon {
@@ -82,6 +90,12 @@
   .reviews__title {
     order: -2;
   }
+
+  .reviews__prev,
+  .reviews__next {
+    border: none;
+  }
+
 }
 
 @media (min-width: $desktop-width) {
