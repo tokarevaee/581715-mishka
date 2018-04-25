@@ -74,6 +74,16 @@
   background: $color-blue;
 }
 
+.main-form__input-radio + .main-form__label--radio:hover::before,
+.main-form__input-checkbox + .main-form__label--checkbox:hover::before{
+  border: 2px solid $color-blue;
+}
+
+.main-form__input-radio + .main-form__label--radio:active::before,
+.main-form__input-checkbox + .main-form__label--checkbox:active::before{
+  border: 2px solid #c7c7c7;
+}
+
 .main-form__input-checkbox + .main-form__label--checkbox {
   &::before {
     content: "";
@@ -110,6 +120,15 @@
   padding-left: 10px;
   overflow: hidden;
   box-sizing: border-box;
+  outline: none;
+
+  &:hover {
+    border-bottom: 2px solid $color-blue;
+  }
+
+  &:focus {
+    border-bottom: 2px solid $color-blue;
+  }
 
   @include placeholder {
     font-size: 17px;
@@ -130,12 +149,39 @@
   margin-bottom: 30px;
 }
 
+.main-form__fieldset--phone {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    width: 24.829px;
+    height: 24.333px;
+    display: block;
+    bottom: 40px;
+    right: 2px;
+    z-index: 3;
+    opacity: 0.3;
+  }
+}
+
 .main-form__textarea--textarea {
   border: $color-main solid 2px;
   width: 100%;
   box-sizing: border-box;
   margin-bottom: 15px;
   padding: 10px;
+  outline: none;
+
+  &:hover {
+    border: 2px solid $color-blue;
+  }
+
+  &:focus {
+    border: 2px solid $color-blue;
+  }
 
   @include placeholder {
     color: $color-placeholder;
@@ -178,17 +224,25 @@
     }
   }
 
+
   .main-form__fieldset--name div,
-  .main-form__fieldset--tel input,
+  .main-form__fieldset--phone input,
   .main-form__fieldset--mail input,
   .main-form__fieldset--add textarea {
     width: 500px;
     margin-left: auto;
   }
 
-  .main-form__fieldset--tel,
+  .main-form__fieldset--phone,
   .main-form__fieldset--mail {
     background-color: $color-background;
+  }
+
+  .main-form__fieldset--phone {
+    &::after {
+      bottom: 70px;
+      right: 185px;
+    }
   }
 
   .main-form__item {
@@ -220,7 +274,7 @@
 
   .main-form__list,
   .main-form__fieldset--name div,
-  .main-form__fieldset--tel input,
+  .main-form__fieldset--phone input,
   .main-form__fieldset--mail input,
   .main-form__fieldset--add textarea {
     width: 700px;
