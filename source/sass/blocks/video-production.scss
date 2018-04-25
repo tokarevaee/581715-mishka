@@ -5,6 +5,13 @@
   border: #ededed solid 1px;
   margin: 0 auto;
   width: 260px;
+  &:hover {
+    box-shadow: 0 5px 5px 0 #ececec;
+  }
+
+  &:active {
+    box-shadow: 0 2px 5px 0 #ececec;
+  }
 }
 
 .video-production__video-title {
@@ -31,6 +38,40 @@
 
 .video-production__video {
   margin-bottom: 33px;
+  width: 260px;
+  height: 151px;
+  background-image: url("../img/video-mobile@1x.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url("../img/icon-play.svg");
+    width: 100.678px;
+    height: 76.891px;
+    display: block;
+    top: 45px;
+    left: 90px;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 9;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.video-production__video{
+  &:hover::before {
+    transform: scale(1.2);
+  }
+
+  &:active::before {
+    transform: scale(0.8);
+    opacity: 0.6;
+  }
 }
 
 .video-production__video-about {
@@ -58,6 +99,12 @@
     height: 456px;
     order: -1;
     margin-bottom: 0;
+    &::before {
+      width: 100.678px;
+      height: 76.891px;
+      left: 300px;
+      top: 185px;
+    }
   }
 
   .video-production__video-about {
