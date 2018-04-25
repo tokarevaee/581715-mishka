@@ -6,7 +6,7 @@
 .index-slogan {
   margin: 0 auto;
   min-height: 283px;
-  width: 320px;
+  width: 260px;
 }
 
 .index-slogan__title {
@@ -22,22 +22,25 @@
 .index-slogan--image {
   background-image: url("../img/hero-mobile@1x.jpg");
   width: 260px;
-  height: 283px;
+  height: 255px;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 @media (min-width: $tablet-width) {
   .index-slogan {
-    width: 500px;
+    width: 668px;
   }
 
   .index-slogan--image {
-    width: 500px;
+    background-size: cover;
+    background-position: center;
+    height: 536px;
   }
 
   .index-slogan__wrapper {
     padding-top: 80px;
+    padding-bottom: 120px;
   }
 
   .index-slogan__title {
@@ -48,11 +51,12 @@
 
 @media (min-width: $desktop-width) {
   .index-slogan {
-    width: 610px;
+    width: 1050px;
   }
 
   .index-slogan--image {
-    width: 610px;
+    background-size: cover;
+    height: 541px;
   }
 
   .index-slogan__title {

@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
+  position: relative;
 }
 
 .page-header__logo img {
@@ -20,7 +21,8 @@
 
 .page-header__logo {
   text-align: center;
-  display: inline-block;
+  display: block;
+  padding: 20px 0;
 }
 
 .page-header p {
@@ -30,20 +32,22 @@
 @media (min-width: $tablet-width) {
   .page-header {
     width: 668px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    margin: 0 auto;
     margin-bottom: -80px;
   }
 
   .page-header__logo {
     width: 170px;
+    display: inline-block;
     order: -3;
   }
 
   .page-header p {
     display: block;
+    padding: 25px 0;
+    margin: 0;
+    font-size: 15px;
+    line-height: 24px;
   }
 }
 
