@@ -12,13 +12,7 @@
   padding: 0;
 }
 
-
-
-
 @media (max-width: $mobile-width-only) {
-
-
-
   .main-nav__toggle {
     top: 30px;
     right: 0;
@@ -65,7 +59,6 @@
   }
 }
 
-
 .main-nav__sale {
   display: none;
   padding: 0;
@@ -88,45 +81,51 @@
   padding: 30px 0 0 45px;
   box-sizing: border-box;
   vertical-align: middle;
-}
 
-.main-nav__item--search {
-  position: relative;
+  &:hover {
+    opacity: 0.6;
+  }
 
-  &::before {
-    content: "";
-    background-image: url("../img/icon-search.svg");
-    top: 30px;
-    left: 0;
-    width: 17.6px;
-    height: 17.6px;
-    position: absolute;
+  &:active {
+    opacity: 0.3;
   }
 }
 
-.main-nav__item--basket {
-  position: relative;
-
-  &::before {
-    content: "";
-    background-image: url("../img/icon-cart.svg");
-    top: 30px;
-    left: 0;
-    width: 20.294px;
-    height: 18.849px;
-    position: absolute;
+.main-nav__item--search a,
+.main-nav__item--basket a {
+  &:hover span {
+    opacity: 0.6;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__item--basket a,
+.main-nav__item--search a {
+  &:hover .icon-cart,
+  &:hover .icon-search {
+    fill: $color-blue;
+  }
+
+}
+
+.main-nav__item--search svg,
+.main-nav__item--basket svg{
+  position: absolute;
+  top: 30px;
+  left: 0;
 }
 
 @media (min-width: $tablet-width) {
-
-.main-nav {
-  width: 668px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
+  .main-nav {
+    width: 668px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
   .main-nav__list {
     margin-right: auto;
@@ -197,12 +196,8 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
-
-    width: auto;
-
+    width: 1050px;
   }
-
-
 
   .main-nav__sale {
     display: flex;

@@ -150,7 +150,7 @@
     margin: 0;
     position: absolute;
     margin-top: 20px;
-    width: auto;
+    width: 668px;
 
     &::after {
       display: none;
@@ -211,6 +211,7 @@
 @media (min-width: $desktop-width) {
   .main-form__title {
     margin-left: 20px;
+    width: 1050px;
   }
 
   .main-form__fieldset {

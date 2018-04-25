@@ -33,3 +33,11 @@
   width: 21.769px;
   height: 21.334px;
 }
+
+
+@media (min-width: $tablet-width) {
+  .social {
+    box-shadow: none;
+    padding: 0;
+  }
+}

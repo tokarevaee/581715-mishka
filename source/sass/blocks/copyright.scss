@@ -12,9 +12,10 @@
   color: $color-main;
   position: relative;
   margin-left: 40px;
+  display: block;
 }
 
-.copyright__link--logo::after {
+.copyright__link::after {
   content: "";
   background-image: url("../img/htmlacademy.svg");
   background-repeat: no-repeat;
@@ -29,6 +30,16 @@
   .copyright {
     display: flex;
     justify-content: flex-end;
+  }
+
+  .copyright__link {
+    display: block;
+    padding: 20px 0;
+  }
+
+
+  .copyright__link::after {
+    top: 18px;
   }
 }
 
