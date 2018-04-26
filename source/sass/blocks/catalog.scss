@@ -16,7 +16,8 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: flex-start;
   border: #ededed solid 1px;
   margin-bottom: 30px;
   &:hover {
@@ -28,11 +29,17 @@
   }
 }
 
+.catalog__image {
+  margin-bottom: 23px;
+}
+
 .catalog__name {
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
   color: $color-main;
+  display: block;
+  margin-bottom: 5px;
 }
 
 .catalog__options {
@@ -41,12 +48,17 @@
   font-size: 13px;
   line-height: 30px;
   color: #444444;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .catalog__price-basket {
   display: flex;
   justify-content: space-between;
   align-self: stretch;
+  border-top: #ededed solid 1px;
+  padding-top: 23px;
+  margin-bottom: 25px;
 }
 
 .catalog__price {
@@ -58,7 +70,9 @@
 }
 
 .catalog__description {
-  margin: 0 28px;
+  width: 80%;
+  //margin-bottom: 30px;
+//margin: 0 20px;
 }
 
 a.catalog__basket-icon {
@@ -77,35 +91,49 @@ a.catalog__basket-icon {
     width: 668px;
     margin: 0 auto;
     padding: 0;
+    margin-bottom: 63px;
+  }
+
+  .catalog__list {
+    margin-bottom: 49px;
   }
 
   .catalog__item {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    height: 334px;
-    margin-bottom: 55px;
+    height: 333px;
+    margin-bottom: 54px;
+  }
+
+  .catalog__item:last-of-type {
+    margin-bottom: 0;
   }
 
   .catalog__image {
     height: 334px;
     width: 334px;
+    margin-bottom: 0;
   }
 
   .catalog__description {
-    width: 275px;
-    height: 334px;
+    width: 277px;
+    height: 331px;
     display: flex;
     flex-direction: column;
-    padding-top: 35px;
+    padding-top: 27px;
+    margin-left: 26px;
     box-sizing: border-box;
   }
 
   .catalog__price-basket {
     margin-top: auto;
-    height: 70px;
+    height: 72px;
     align-items: center;
     border-top: 1px solid #ececec;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-left: 3px;
   }
 
   .catalog__options {
@@ -125,6 +153,7 @@ a.catalog__basket-icon {
   .catalog {
     width: 1050px;
     margin: 0 auto;
+    margin-bottom: 103px;
   }
 
   .catalog__list {
@@ -157,14 +186,19 @@ a.catalog__basket-icon {
     height: 189px;
     display: flex;
     flex-direction: column;
-    padding-top: 28px;
+    padding-top: 21px;
     box-sizing: border-box;
     margin: 0 25px;
   }
 
   .catalog__price-basket {
     margin-top: auto;
-    height: 75px;
+    height: 71px;
     border-top: 1px solid #ececec;
+    padding-left: 0;
+  }
+
+  .catalog__options {
+    margin-bottom: 13px;
   }
 }
