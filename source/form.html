@@ -8,7 +8,7 @@
 </head>
 <body>
   <header class="page-header">
-    <nav class="main-nav main-nav--opened main-nav--nojs">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <a href="index.html" class="page-header__logo">
         <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="85.589px" height="35.034px" viewBox="32.458 20.216 85.589 35.034" enable-background="new 32.458 20.216 85.589 35.034" xml:space="preserve">
@@ -61,18 +61,18 @@
       <p>Бесплатная доставка по России</p>
     </nav>
   </header>
-  <main class="">
+  <main>
     <div class="order-header">
       <h1 class="order-header__title">
         Вязание на заказ
       </h1>
     </div>
     <section class="form-order">
-      <p class="form-order__note">
+      <p class="form-order__note form-order--wrapper">
         Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
       </p>
       <form class="form-order__form main-form" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="main-form__fieldset main-form__fieldset--type">
+        <fieldset class="main-form__fieldset main-form__fieldset--type form-order--wrapper">
           <legend class="main-form__title">Тип</legend>
           <ul class="main-form__list">
             <li class="main-form__item">
@@ -85,59 +85,63 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="main-form__fieldset main-form__fieldset--color">
-          <legend class="main-form__title">Цвет</legend>
-          <ul class="main-form__list">
-            <li class="main-form__item">
-              <input class="main-form__input-checkbox visually-hidden" type="checkbox" name="white" id="white" checked>
-              <label class="main-form__label main-form__label--checkbox" for="white">Белый</label>
-            </li>
-            <li class="main-form__item">
-              <input class="main-form__input-checkbox visually-hidden " type="checkbox" name="gray" id="gray">
-              <label class="main-form__label main-form__label--checkbox" for="gray">Серый</label>
-            </li>
-            <li class="main-form__item">
-              <input class="main-form__input-checkbox visually-hidden" type="checkbox" name="tiffani" id="tiffani">
-              <label class="main-form__label main-form__label--checkbox" for="tiffani">«Тиффани»</label>
-            </li>
-            <li class="main-form__item">
-              <input class="main-form__input-checkbox visually-hidden" type="checkbox" name="black" id="black">
-              <label class="main-form__label main-form__label--checkbox" for="black">Черный</label>
-            </li>
-            <li class="main-form__item">
-              <input class="main-form__input-checkbox visually-hidden " type="checkbox" name="pink" id="pink">
-              <label class="main-form__label main-form__label--checkbox" for="pink">Розовый</label>
-            </li>
-            <li class="main-form__item">
-              <input class="main-form__input-checkbox visually-hidden" type="checkbox" name="orange" id="orange">
-              <label class="main-form__label main-form__label--checkbox" for="orange">Оранжевый</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset  class="fio-form main-form__fieldset main-form__fieldset--name">
+        <div class="form-order--gray">
+          <fieldset class="main-form__fieldset main-form__fieldset--color form-order--wrapper">
+            <legend class="main-form__title">Цвет</legend>
+            <ul class="main-form__list">
+              <li class="main-form__item">
+                <input class="main-form__input-checkbox visually-hidden" type="checkbox" name="white" id="white" checked>
+                <label class="main-form__label main-form__label--checkbox" for="white">Белый</label>
+              </li>
+              <li class="main-form__item">
+                <input class="main-form__input-checkbox visually-hidden " type="checkbox" name="gray" id="gray">
+                <label class="main-form__label main-form__label--checkbox" for="gray">Серый</label>
+              </li>
+              <li class="main-form__item">
+                <input class="main-form__input-checkbox visually-hidden" type="checkbox" name="tiffani" id="tiffani">
+                <label class="main-form__label main-form__label--checkbox" for="tiffani">«Тиффани»</label>
+              </li>
+              <li class="main-form__item">
+                <input class="main-form__input-checkbox visually-hidden" type="checkbox" name="black" id="black">
+                <label class="main-form__label main-form__label--checkbox" for="black">Черный</label>
+              </li>
+              <li class="main-form__item">
+                <input class="main-form__input-checkbox visually-hidden " type="checkbox" name="pink" id="pink">
+                <label class="main-form__label main-form__label--checkbox" for="pink">Розовый</label>
+              </li>
+              <li class="main-form__item">
+                <input class="main-form__input-checkbox visually-hidden" type="checkbox" name="orange" id="orange">
+                <label class="main-form__label main-form__label--checkbox" for="orange">Оранжевый</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <fieldset  class="fio-form main-form__fieldset main-form__fieldset--name form-order--wrapper">
           <legend class="main-form__title">ФИО</legend>
           <div>
-            <label class="main-form__label fio-form-form--label" for="first-name">Имя:</label>
-            <input class="main-form__input fio-form--input" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя*" required>
-            <label class="main-form__label fio-form--label" for="second-name">Фамилия:</label>
-            <input class="main-form__input fio-form--input" id="second-name" type="text" name="second-name" placeholder="Укажите фамилию*" required>
-            <label class="main-form__label fio-form--label" for="middle-name">Отчество:</label>
-            <input class="main-form__input fio-form--input" id="middle-name" type="text" name="middle-name" placeholder="Отчество, если желаете">
+            <label class="main-form__label" for="first-name">Имя:</label>
+            <input class="main-form__input" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя*" required>
+            <label class="main-form__label" for="second-name">Фамилия:</label>
+            <input class="main-form__input" id="second-name" type="text" name="second-name" placeholder="Укажите фамилию*" required>
+            <label class="main-form__label" for="middle-name">Отчество:</label>
+            <input class="main-form__input" id="middle-name" type="text" name="middle-name" placeholder="Отчество, если желаете">
           </div>
         </fieldset>
-        <fieldset  class="main-form__fieldset main-form__fieldset--phone">
-          <legend class="main-form__title">Тел</legend>
-          <input class="main-form__input main-form__input--phone" id="phone" type="tel" name="phone" placeholder="+7 XXX XX XX*" required>
-        </fieldset>
-        <fieldset  class="email main-form__fieldset main-form__fieldset--mail">
-          <legend class="main-form__title">E-mail</legend>
-          <input class="main-form__input main-form__input--email" id="email" type="email" name="email" placeholder="Ваш Email*" required>
-        </fieldset>
-        <fieldset  class="add-form main-form__fieldset main-form__fieldset--add">
+        <div class="form-order--gray">
+          <fieldset  class="main-form__fieldset main-form__fieldset--phone form-order--wrapper">
+            <legend class="main-form__title">Тел</legend>
+            <input class="main-form__input main-form__input--phone" id="phone" type="tel" name="phone" placeholder="+7 XXX XX XX*" required>
+          </fieldset>
+          <fieldset  class="email main-form__fieldset main-form__fieldset--mail form-order--wrapper">
+            <legend class="main-form__title">E-mail</legend>
+            <input class="main-form__input main-form__input--email" id="email" type="email" name="email" placeholder="Ваш Email*" required>
+          </fieldset>
+        </div>
+        <fieldset  class="add-form main-form__fieldset main-form__fieldset--add form-order--wrapper">
           <legend class="main-form__title">Доп</legend>
-          <textarea class="main-form__textarea--textarea" id="review" name="review" rows="8" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <textarea class="main-form__textarea--textarea" id="review" name="review" rows="7" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
-        <div>
+        <div class="main-form__note-btn form-order--wrapper">
           <p class="main-form__footnote">*Поля обязательные для заполнения</p>
           <button class="btn form__btn" type="submit">Отправить заказ</button>
         </div>
