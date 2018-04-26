@@ -39,6 +39,7 @@
   margin-left: 7px;
   flex-basis: 100%;
   text-align: center;
+
   &:first-child {
     margin-left: 0;
   }
@@ -97,7 +98,8 @@
     background-color: #ffffff;
     padding: 50px;
   }
-  br {
+
+  .popup-basket br {
     display: none;
   }
 

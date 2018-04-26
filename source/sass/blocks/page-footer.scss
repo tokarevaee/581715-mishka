@@ -24,25 +24,25 @@
     justify-content: space-between;
     width: 668px;
     margin: 0 auto;
-
     box-sizing: border-box;
     padding: 50px 0;
     height: 143px;
   }
 
   .page-footer--wrapper {
-    margin-top: 60px;
+    margin-top: 0;
   }
 
   .page-footer__logo {
     flex-grow: 1;
     display: block;
     text-align: left;
-    &:hover .logo-footer{
+
+    &:hover .logo-footer {
       fill: $color-blue;
     }
 
-    &:active .logo-footer{
+    &:active .logo-footer {
       fill: $color-blue;
       opacity: 0.3;
     }
@@ -68,11 +68,6 @@
     justify-content: space-between;
     width: 1050px;
     margin: 0 auto;
-    margin-top: 100px;
-  }
-
-  .page-footer--wrapper {
-    margin-top: 100px;
   }
 
   .page-footer__logo {
@@ -87,6 +82,5 @@
     flex-grow: 1;
     text-align: right;
     margin-right: 55px;
-
   }
 }

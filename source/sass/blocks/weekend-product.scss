@@ -7,6 +7,10 @@
   margin-bottom: 30px;
 }
 
+.weekend-product__main-title {
+  margin-bottom: 25px;
+}
+
 .weekend-product__title {
   text-transform: uppercase;
   color: $color-blue;
@@ -19,21 +23,21 @@
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
+  margin-bottom: 3px;
 }
 
-.weekend-product__description {
+p.weekend-product__description {
   font-size: 15px;
   line-height: 24px;
   color: #444444;
   width: 290px;
-  margin: 50px 0;
+  margin: 0 0 15px 0;
 }
 
 .weekend-product__about {
   font-size: 15px;
   line-height: 24px;
   color: #444444;
-  width: 336px;
   text-align: left;
   margin-bottom: 30px;
 }
@@ -43,8 +47,14 @@
   padding: 10px 0;
 }
 
+.weekend-product__about td {
+  padding: 8px 0;
+  padding-right: 10px;
+}
+
 .weekend-product__img {
   display: block;
+  margin-bottom: 25px;
 }
 
 .weekend-product__price {
@@ -53,18 +63,19 @@
   color: #444444;
   font-weight: bold;
   text-align: center;
-  margin: 30px 0;
+  margin: 0;
   display: block;
+  margin-bottom: 25px;
 }
 
 .weekend-product__btn {
   width: 260px;
+  margin-bottom: 35px;
 }
 
 .weekend-product__main-info {
   width: 260px;
 }
-
 
 @media (min-width: $tablet-width) {
   .weekend-product {
@@ -77,6 +88,18 @@
     margin-bottom: 50px;
   }
 
+  .weekend-product__main-info {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: space-between;
+    width: 290px;
+  }
+
+  .weekend-product__about {
+    margin-bottom: 55px;
+  }
+
   .weekend-product__btn {
     width: 290px;
   }
@@ -87,17 +110,17 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    margin-bottom: 50px;
   }
 
   .weekend-product__title {
-    width: 85px;
+    width: 94px;
   }
 
-  .weekend-product__main-info {
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    width: 290px;
+  p.weekend-product__description {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 47px;
   }
 
   .weekend-product__img {
@@ -106,6 +129,7 @@
     height: 404px;
     bottom: 0;
     right: 0;
+    z-index: -1;
   }
 
   .weekend-product__name {
@@ -117,6 +141,7 @@
   .weekend-product__price {
     font-size: 20px;
     line-height: 24px;
+    margin-bottom: 34px;
   }
 }
 
@@ -125,33 +150,50 @@
     width: 1050px;
     display: block;
     margin-bottom: 70px;
-  }
-
-  .weekend-product__main-info {
-    width: 290px;
-    padding-left: 175px;
-  }
-
-  .weekend-product__title {
-    order: -1;
-    padding-left: 40px;
-    padding-right: 40px;
-    text-align: center;
-  }
-
-  .weekend-product__name {
-    font-size: 53px;
-    line-height: 57px;
-    font-weight: bold;
+    padding-top: 53px;
   }
 
   .weekend-product__main-title {
     justify-content: flex-start;
   }
 
+  .weekend-product__title {
+    order: -1;
+    padding-left: 35px;
+    padding-right: 42px;
+    padding-top: 5px;
+    text-align: center;
+  }
+
+  .weekend-product__main-info {
+    width: 290px;
+    padding-left: 175px;
+    min-height: 512px;
+  }
+
+  .weekend-product__name {
+    font-size: 53px;
+    line-height: 57px;
+    font-weight: bold;
+    padding-bottom: 0;
+  }
+
+  .weekend-product__about {
+    margin-bottom: auto;
+  }
+
+  .weekend-product__price {
+    margin-top: auto;
+    margin-bottom: 35px;
+  }
+
   .weekend-product__img {
     width: 525px;
     height: 636px;
     z-index: -1;
+  }
+
+  .weekend-product__btn {
+    margin-bottom: 35px;
   }
 }

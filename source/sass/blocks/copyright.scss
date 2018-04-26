@@ -43,7 +43,6 @@ a.copyright__link {
     padding: 20px 0;
   }
 
-
   .copyright__link::after {
     top: 18px;
   }
@@ -53,5 +52,6 @@ a.copyright__link {
   .copyright {
     display: flex;
     justify-content: flex-end;
+    width: 195px;
   }
 }
