@@ -16,6 +16,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .form-order {
+    margin-bottom: 33px;
+  }
+
+
   .form-order--wrapper {
     width: 668px;
   }

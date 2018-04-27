@@ -119,12 +119,18 @@
         <fieldset  class="fio-form main-form__fieldset main-form__fieldset--name form-order--wrapper">
           <legend class="main-form__title">ФИО</legend>
           <div>
-            <label class="main-form__label" for="first-name">Имя:</label>
-            <input class="main-form__input" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя*" required>
-            <label class="main-form__label" for="second-name">Фамилия:</label>
-            <input class="main-form__input" id="second-name" type="text" name="second-name" placeholder="Укажите фамилию*" required>
-            <label class="main-form__label" for="middle-name">Отчество:</label>
-            <input class="main-form__input" id="middle-name" type="text" name="middle-name" placeholder="Отчество, если желаете">
+            <div>
+              <label class="main-form__label" for="first-name">Имя:</label>
+              <input class="main-form__input" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя*" required>
+            </div>
+            <div>
+              <label class="main-form__label" for="second-name">Фамилия:</label>
+              <input class="main-form__input" id="second-name" type="text" name="second-name" placeholder="Укажите фамилию*" required>
+            </div>
+            <div>
+              <label class="main-form__label" for="middle-name">Отчество:</label>
+              <input class="main-form__input" id="middle-name" type="text" name="middle-name" placeholder="Отчество, если желаете">
+            </div>
           </div>
         </fieldset>
         <div class="form-order--gray">
@@ -143,7 +149,7 @@
         </fieldset>
         <div class="main-form__note-btn form-order--wrapper">
           <p class="main-form__footnote">*Поля обязательные для заполнения</p>
-          <button class="btn form__btn" type="submit">Отправить заказ</button>
+          <button class="btn main-form__btn" type="submit">Отправить заказ</button>
         </div>
       </form>
     </section>
