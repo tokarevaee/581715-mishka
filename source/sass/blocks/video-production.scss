@@ -63,9 +63,11 @@
       transform: scale(1.2);
     }
   }
+
   &:hover::before {
     transform: scale(1.2);
   }
+
   &:active::before {
     transform: scale(0.8);
     opacity: 0.6;
