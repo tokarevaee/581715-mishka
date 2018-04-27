@@ -5,6 +5,7 @@
   border: #ededed solid 1px;
   margin: 0 auto;
   width: 260px;
+
   &:hover {
     box-shadow: 0 5px 5px 0 #ececec;
   }
@@ -57,17 +58,14 @@
     background-repeat: no-repeat;
     position: absolute;
     z-index: 9;
+
     &:hover {
       transform: scale(1.2);
     }
   }
-}
-
-.video-production__video {
   &:hover::before {
     transform: scale(1.2);
   }
-
   &:active::before {
     transform: scale(0.8);
     opacity: 0.6;
@@ -152,6 +150,13 @@
     margin-bottom: 0;
     flex-grow: 1;
     margin-right: 17px;
+
+    &::before {
+      width: 100.678px;
+      height: 76.891px;
+      left: 289px;
+      top: 191px;
+    }
   }
 
   .video-production__video-about {
@@ -164,16 +169,6 @@
     min-width: 231px;
     margin-top: auto;
     margin-bottom: 61px;
-  }
-
-  .video-production__video {
-
-    &::before {
-      width: 100.678px;
-      height: 76.891px;
-      left: 289px;
-      top: 191px;
-    }
   }
 
   .video-production__video-title {

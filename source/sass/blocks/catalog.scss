@@ -20,6 +20,7 @@
   justify-content: flex-start;
   border: #ededed solid 1px;
   margin-bottom: 30px;
+
   &:hover {
     box-shadow: 0 5px 5px 0 #ececec;
   }
@@ -74,7 +75,6 @@
 }
 
 a.catalog__basket-icon {
-
   &:hover path {
     fill: $color-blue;
   }

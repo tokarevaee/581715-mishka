@@ -51,6 +51,7 @@
 .contacts__mail a {
   box-shadow: 0 1px 0 0 $color-blue;
   color: #444444;
+
   &:hover {
     color: $color-blue;
   }
@@ -78,7 +79,6 @@
     background-repeat: no-repeat;
     background-position: right top 40px;
     background-size: 47px 81px;
-
   }
 
   .contacts__title {
@@ -103,6 +103,7 @@
     font-size: 17px;
     line-height: 30px;
     margin-bottom: 0;
+
     &:first-child {
       margin-right: 50px;
     }

@@ -13,7 +13,6 @@
 }
 
 .main-nav__item a {
-
   &:hover {
     opacity: 0.6;
   }
@@ -25,7 +24,6 @@
 
 .main-nav__item--search a,
 .main-nav__item--basket a {
-
   &:active {
     opacity: 0.3;
   }
@@ -33,7 +31,6 @@
 
 .main-nav__item--basket a,
 .main-nav__item--search a {
-
   &:hover .icon-cart,
   &:hover .icon-search {
     fill: $color-blue;
@@ -83,12 +80,12 @@
     display: none;
   }
 
-  .main-nav--opened .main-nav__list
+  .main-nav--opened .main-nav__list,
   .main-nav--closed .main-nav__user-list {
     display: block;
   }
 
-  .main-nav--nojs .main-nav__list
+  .main-nav--nojs .main-nav__list,
   .main-nav--closed .main-nav__user-list {
     display: block;
   }
@@ -214,6 +211,7 @@
 
   .main-nav__sale {
     display: flex;
+
     & a {
       font-size: 15px;
       line-height: 24px;
