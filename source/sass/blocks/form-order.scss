@@ -20,7 +20,6 @@
     margin-bottom: 33px;
   }
 
-
   .form-order--wrapper {
     width: 668px;
   }
@@ -37,7 +36,17 @@
 }
 
 @media (min-width: $desktop-width) {
+  .form-order {
+    margin-bottom: 31px;
+  }
+
   .form-order--wrapper {
     width: 1050px;
+  }
+
+  p.form-order--wrapper,
+  div.form-order--wrapper {
+    width: 700px;
+    padding-top: 17px;
   }
 }

@@ -47,6 +47,7 @@
   padding-left: 30px;
 
 }
+
 .contacts__mail a {
   box-shadow: 0 1px 0 0 $color-blue;
   color: #444444;
@@ -92,7 +93,7 @@
     flex-direction: row;
     width: 668px;
     vertical-align: top;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: flex-start;
     margin-bottom: 60px;
   }
@@ -135,6 +136,7 @@
     height: 460px;
     margin: 0 auto;
     padding-left: 185px;
+    padding-top: 80px;
     background-image: url("../img/icon-flag.svg");
     background-repeat: no-repeat;
     background-position: left 74px top 145px;

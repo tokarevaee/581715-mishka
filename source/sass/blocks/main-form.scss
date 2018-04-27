@@ -1,7 +1,6 @@
 .main-form__fieldset {
   border: none;
   padding: 0;
-
 }
 
 @media (max-width: $mobile-width-only) {
@@ -174,7 +173,6 @@
   padding: 13px 0;
 }
 
-
 .main-form__input-radio + .main-form__label--radio {
   &::before {
     content: "";
@@ -200,12 +198,12 @@
 }
 
 .main-form__input-radio + .main-form__label--radio:hover::before,
-.main-form__input-checkbox + .main-form__label--checkbox:hover::before{
+.main-form__input-checkbox + .main-form__label--checkbox:hover::before {
   border: 2px solid $color-blue;
 }
 
 .main-form__input-radio + .main-form__label--radio:active::before,
-.main-form__input-checkbox + .main-form__label--checkbox:active::before{
+.main-form__input-checkbox + .main-form__label--checkbox:active::before {
   border: 2px solid #c7c7c7;
 }
 
@@ -280,7 +278,6 @@
     opacity: 0.3;
   }
 }
-
 
 .main-form__fieldset--mail {
   position: relative;
@@ -393,7 +390,6 @@
     line-height: 19px;
   }
 
-
   .main-form__input-radio + .main-form__label--radio {
     &::before {
       left: -59px;
@@ -453,10 +449,6 @@
     box-sizing: border-box;
     min-height: 307px;
 
-    & ul {
-
-    }
-
     & li {
       width: 160px;
       padding-left: 80px;
@@ -488,11 +480,12 @@
       flex-wrap: wrap;
     }
 
-    & > div > div{
+    & > div > div {
       display: flex;
       flex-wrap: nowrap;
       align-items: center;
       margin-bottom: 8px;
+      margin-left: 0;
     }
 
     & legend {
@@ -513,7 +506,6 @@
       margin-bottom: 0px;
       margin-top: 0;
       position: relative;
-
     }
   }
 
@@ -538,7 +530,6 @@
       margin-top: 16px;
       padding-bottom: 17px;
       padding-left: 17px;
-
     }
   }
 
@@ -588,17 +579,17 @@
   .main-form__btn {
     min-width: 230px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
   .main-form__title {
-    margin-left: 20px;
-    width: 1050px;
+    margin-bottom: 0;
+    margin-top: 20px;
+    margin-left: 63px;
   }
 
   .main-form__fieldset {
-    padding: 50px 0;
+    padding: 30px 0;
   }
 
   .main-form__list,
@@ -607,13 +598,52 @@
   .main-form__fieldset--mail input,
   .main-form__fieldset--add textarea {
     width: 700px;
-    margin: 0 auto;
+    justify-content: flex-start;
+    margin-left: 175px;
+  }
+
+  .main-form__fieldset--type {
+    margin-bottom: 22px;
+
+    & ul {
+      flex-direction: column;
+    }
   }
 
   .main-form__fieldset--color {
+    min-width: 875px;
+    min-height: 30px;
+    padding-top: 45px;
+    padding-bottom: 35px;
+
     & ul {
-      height: 220px;
+      width: 875px;
     }
+
+    & li {
+      width: 160px;
+      margin-right: 20px;
+    }
+  }
+
+  .main-form__fieldset--name {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  .main-form__fieldset--phone {
+    padding-top: 46px;
+    padding-bottom: 0px;
+  }
+
+  .main-form__fieldset--mail {
+    padding-top: 23px;
+    padding-bottom: 46px;
+  }
+
+  .main-form__fieldset--add {
+    margin-bottom: 0px;
+    padding-top: 51px;
   }
 
   .main-form__input,
