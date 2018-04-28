@@ -100,12 +100,11 @@
   }
 
   .main-nav--opened .main-nav__list,
-  .main-nav--closed .main-nav__user-list {
+  .main-nav--opened .main-nav__user-list {
     display: block;
   }
 
-  .main-nav--nojs .main-nav__list,
-  .main-nav--closed .main-nav__user-list {
+  .main-nav--nojs .main-nav__list{
     display: block;
   }
 }

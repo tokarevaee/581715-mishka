@@ -253,7 +253,7 @@
     border-bottom: 2px solid $color-blue;
   }
 
-  @include placeholder {
+  &::placeholder {
     font-size: 17px;
     line-height: 18px;
     box-sizing: border-box;
@@ -315,7 +315,7 @@
     border: 2px solid $color-blue;
   }
 
-  @include placeholder {
+  &::placeholder {
     color: $color-placeholder;
     font-size: 17px;
     line-height: 18px;
@@ -468,7 +468,7 @@
       flex-wrap: wrap;
     }
 
-    & > div > div {
+    & .main-form__fieldset--wrapper {
       display: flex;
       flex-wrap: nowrap;
       align-items: center;
@@ -623,11 +623,19 @@
   .main-form__fieldset--phone {
     padding-top: 46px;
     padding-bottom: 0;
+    &::after {
+      bottom: 20px;
+      right: 189px;
+    }
   }
 
   .main-form__fieldset--mail {
     padding-top: 23px;
     padding-bottom: 46px;
+    &::after {
+      bottom: 57px;
+      right: 189px;
+    }
   }
 
   .main-form__fieldset--add {
@@ -637,7 +645,7 @@
 
   .main-form__input,
   .main-form__textarea--textarea {
-    @include placeholder {
+    &::placeholder {
       font-size: 19px;
       line-height: 19px;
     }
