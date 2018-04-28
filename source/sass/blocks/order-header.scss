@@ -1,11 +1,11 @@
 .order-header {
   background-color: $color-background;
-  height: 175px;
-  margin-bottom: 30px;
-  padding: 75px 0;
+  height: 177px;
+  padding-top: 71px;
   box-sizing: border-box;
   text-align: center;
   vertical-align: middle;
+  margin-bottom: 23px;
 }
 
 .order-header__title {
@@ -14,4 +14,33 @@
   line-height: 30px;
   font-weight: bold;
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .order-header {
+    background-color: $color-background;
+    min-height: 230px;
+    margin-bottom: 70px;
+    padding-top: 95px;
+    padding-bottom: 0;
+  }
+
+  .order-header__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-header {
+    background-color: $color-background;
+    min-height: 228px;
+    margin-bottom: 133px;
+    padding-top: 96px;
+  }
+
+  .order-header__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

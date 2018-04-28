@@ -1,38 +1,43 @@
 .products {
-  margin: 0 auto;
-  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 29px;
 }
 
-.products a {
-  display: block;
+.products__item--wrapper {
+  display: flex;
+  justify-content: space-between;
   box-sizing: border-box;
+  align-items: center;
+  padding-top: 19px;
+  padding-bottom: 21px;
+
+  &:hover svg {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.products__item {
-  height: 103px;
-  min-width: 320px;
-  background-color: #63d1bb;
-  padding: 30px 0;
-  vertical-align: middle;
+a.products__item {
   display: block;
+  width: 260px;
+  margin: 0 auto;
 }
 
-.products__item--decoration-image {
+.products svg {
+  opacity: 0.5;
+  display: inline-block;
+}
+
+.products__item--decoration {
   background-color: #63d1bb;
-  background-image: url("../img/icon-interior.svg");
-  background-size: 40px 60px;
-  background-repeat: no-repeat;
-  background-position: right 30px top 30px;
-  right: 50px;
 }
 
-.products__item--toy-image {
+.products__item--toy {
   background-color: #56c3b2;
-  background-image: url("../img/icon-toy.svg");
-  background-size: 60px 60px;
-  background-repeat: no-repeat;
-  background-position: right 30px top 30px;
-  right: 50px;
 }
 
 .products h2 {
@@ -42,30 +47,53 @@
   line-height: 24px;
   font-weight: bold;
   width: 130px;
+  display: inline-block;
 }
 
 @media (min-width: $tablet-width) {
   .products {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     margin: 0 auto;
     margin-bottom: 50px;
+    margin-top: -115px;
+    width: 668px;
   }
 
-  .products__item {
+  .products__item--wrapper {
     width: 334px;
+    min-height: 103px;
+    padding: 30px;
+    box-sizing: border-box;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
+  a.products__item {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .products h2 {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .products {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
     margin-bottom: 70px;
+    width: 1050px;
   }
 
-  .products__item {
+  .products__item--wrapper {
+    width: 525px;
+  }
+
+  a.products__item {
     width: 525px;
   }
 }

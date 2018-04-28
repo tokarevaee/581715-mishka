@@ -1,4 +1,9 @@
-.form-order {
+.form-order--wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.form-order--wrapper-gray {
   width: 260px;
   margin: 0 auto;
 }
@@ -7,11 +12,21 @@
   color: $color-light-black;
   font-size: 13px;
   line-height: 24px;
+  margin-bottom: 23px;
 }
 
 @media (min-width: $tablet-width) {
   .form-order {
+    margin-bottom: 33px;
+  }
+
+  .form-order--wrapper {
     width: 668px;
+  }
+
+  .form-order--gray {
+    width: 100%;
+    background-color: #f1f1f1;
   }
 
   .form-order__note {
@@ -22,6 +37,16 @@
 
 @media (min-width: $desktop-width) {
   .form-order {
+    margin-bottom: 31px;
+  }
+
+  .form-order--wrapper {
     width: 1050px;
+  }
+
+  p.form-order--wrapper,
+  div.form-order--wrapper {
+    width: 700px;
+    padding-top: 17px;
   }
 }

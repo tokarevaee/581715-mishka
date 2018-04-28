@@ -3,76 +3,98 @@
   flex-direction: column;
   width: 260px;
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: 25px;
 }
 
 .advantages__list {
   margin: 0;
+  margin-top: 5px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  height: 737px;
 }
 
 .advantages__item {
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
-  padding-top: 85px;
+  padding-top: 50px;
   background-size: 35px 35px;
   background-repeat: no-repeat;
-  background-position: top 25px left 0;
+  background-position: top 0 left 0;
   width: 260px;
 }
 
 .advantages__item--flower {
+  position: relative;
+  background-size: 35px 35px;
   background-image: url("../img/icon-feature-flower.svg");
 }
 
 .advantages__item--money {
+  position: relative;
+  background-size: 50px 28px;
   background-image: url("../img/icon-feature-money.svg");
 }
 
 .advantages__item--heart {
+  position: relative;
+  background-size: 35px 35px;
   background-image: url("../img/icon-feature-heart.svg");
 }
 
 .advantages__item--ball {
+  position: relative;
+  background-size: 46px 34px;
   background-image: url("../img/icon-feature-ball.svg");
 }
 
 .advantages__item--rocket {
+  position: relative;
+  background-size: 35px 35px;
   background-image: url("../img/icon-feature-rocket.svg");
 }
 
 .advantages__item--gift {
+  position: relative;
+  background-size: 35px 35px;
   background-image: url("../img/icon-feature-gift.svg");
 }
 
 @media (min-width: $tablet-width) {
   .advantages {
+    padding-top: 35px;
     width: 668px;
-    height: 500px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
 
   .advantages__list {
     flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    height: 475px;
   }
 
   .advantages__item {
     width: 334px;
+    font-size: 20px;
+    line-height: 22px;
+    padding-top: 50px;
+    margin-bottom: 62px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantages {
     width: 700px;
-    height: 500px;
-    margin-bottom: 90px;
+    margin-bottom: 30px;
+    padding-top: 50px;
   }
 
   .advantages__list {
-    flex-wrap: wrap;
+    height: 485px;
   }
 
   .advantages__item {

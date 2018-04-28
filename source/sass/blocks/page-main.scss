@@ -17,6 +17,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-main {
+    margin-bottom: 104px;
+  }
+
   .page-main--slogan {
     font-size: 53px;
     line-height: 57px;
