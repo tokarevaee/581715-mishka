@@ -25,6 +25,11 @@
   height: 255px;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: 260px auto;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -33,9 +38,17 @@
   }
 
   .index-slogan--image {
-    background-size: cover;
     background-position: center;
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-size: auto auto;
+    width: 668px;
     height: 536px;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+      background-size: auto auto;
+    }
   }
 
   .index-slogan__wrapper {
@@ -57,7 +70,16 @@
 
   .index-slogan--image {
     background-size: cover;
+    background-position: center -30px;;
+    background-image: url("../img/hero-desktop@1x.jpg");
+    width: 1050px;
     height: 541px;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+      background-size:  auto 541px;
+    }
   }
 
   .index-slogan__title {
