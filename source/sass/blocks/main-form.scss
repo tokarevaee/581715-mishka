@@ -623,6 +623,7 @@
   .main-form__fieldset--phone {
     padding-top: 46px;
     padding-bottom: 0;
+
     &::after {
       bottom: 20px;
       right: 189px;
@@ -632,6 +633,7 @@
   .main-form__fieldset--mail {
     padding-top: 23px;
     padding-bottom: 46px;
+
     &::after {
       bottom: 57px;
       right: 189px;
