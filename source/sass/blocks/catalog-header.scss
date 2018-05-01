@@ -20,8 +20,8 @@
   .catalog-header {
     background-color: $color-background;
     min-height: 230px;
-    margin-bottom: 55px;
-    padding: 100px 0;
+    margin-bottom: 0;
+    padding-top: 100px;
   }
 
   .catalog-header__title {
@@ -34,7 +34,6 @@
   .catalog-header {
     background-color: $color-background;
     min-height: 228px;
-    margin-bottom: 133px;
     padding-top: 96px;
   }
 

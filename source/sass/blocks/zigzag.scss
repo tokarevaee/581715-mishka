@@ -1,0 +1,30 @@
+@media (min-width: $tablet-width) {
+  .zigzag--fill {
+    background-color: $color-background;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    height: 34px;
+    width: 100%;
+    margin-bottom: 55px;
+    z-index: 2;
+    display: block;
+  }
+
+  .zigzag--line {
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    height: 23px;
+    width: 100%;
+    margin-bottom: 55px;
+    z-index: 2;
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .zigzag--fill {
+    margin-bottom: 133px;
+  }
+}

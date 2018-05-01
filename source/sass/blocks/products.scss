@@ -57,13 +57,13 @@ a.products__item {
     justify-content: center;
     margin: 0 auto;
     margin-bottom: 50px;
-    margin-top: -115px;
+    margin-top: -209px;
     width: 668px;
   }
 
   .products__item--wrapper {
     width: 334px;
-    min-height: 103px;
+    min-height: 123px;
     padding: 30px;
     box-sizing: border-box;
 
@@ -81,19 +81,39 @@ a.products__item {
     font-size: 20px;
     line-height: 30px;
   }
+
+  .products__item--decoration .zigzag--fill {
+    background-color: #63d1bb;
+    margin-bottom: 0;
+  }
+
+  .products__item--toy .zigzag--fill {
+    background-color: #56c3b2;
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .products {
+    margin-top: -287px;
     margin-bottom: 70px;
     width: 1050px;
   }
 
   .products__item--wrapper {
     width: 525px;
+    min-height: 122px;
   }
 
   a.products__item {
     width: 525px;
+  }
+
+  .products__item--decoration .zigzag--fill {
+    margin-bottom: 0;
+  }
+
+  .products__item--toy .zigzag--fill {
+    margin-bottom: 0;
   }
 }

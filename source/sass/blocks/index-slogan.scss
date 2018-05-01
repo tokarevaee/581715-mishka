@@ -53,7 +53,7 @@
 
   .index-slogan__wrapper {
     padding-top: 80px;
-    padding-bottom: 120px;
+    //padding-bottom: 120px;
   }
 
   .index-slogan__title {
@@ -61,6 +61,11 @@
     line-height: 50px;
     padding-top: 74px;
   }
+  .index-slogan__wrapper .zigzag--fill {
+    padding-bottom: 120px;
+    background-color: #f9f9f9;
+  }
+
 }
 
 @media (min-width: $desktop-width) {
@@ -85,5 +90,9 @@
   .index-slogan__title {
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .index-slogan__wrapper .zigzag--fill {
+    padding-bottom: 120px;
   }
 }
