@@ -54,12 +54,11 @@
           <p>Бесплатная доставка по России</p>
       </nav>
     </header>
-    <div class="page-main">
+    <main class="page-main">
       <section class="index-slogan__wrapper">
         <div class="index-slogan index-slogan--image">
           <h1 class="index-slogan__title">Милые штуки ручной<br> работы для дома</h1>
         </div>
-        <div class="zigzag--fill"></div>
       </section>
       <section class="products">
         <div class="products__item--decoration">
@@ -77,7 +76,6 @@
             </svg>
             </div>
           </a>
-          <div class="zigzag--fill"></div>
         </div>
         <div class="products__item--toy">
           <a class="products__item" href="#">
@@ -88,7 +86,6 @@
             </svg>
             </div>
           </a>
-          <div class="zigzag--fill"></div>
         </div>
       </section>
       <section class="weekend-product">
@@ -115,6 +112,9 @@
             </tr>
           </table>
           <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
             <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
             <img class="weekend-product__img" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязанные корзинки">
@@ -215,7 +215,7 @@
         </div>
       </div>
     </footer>
-    <div class="popup popup--show">
+    <div class="popup">
       <form method="get" action="https://echo.htmlacademy.ru">
         <div class="popup-basket">
           <h3 class="popup-basket__title">Добавить<br> в корзину</h3>

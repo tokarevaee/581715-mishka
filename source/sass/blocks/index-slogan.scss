@@ -21,38 +21,56 @@
 
 .index-slogan--image {
   background-image: url("../img/hero-mobile@1x.jpg");
-  width: 260px;
-  height: 255px;
+  background-size: auto 283px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position-x: center;
+  background-position-y: top;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
-    background-size: 260px auto;
+    background-size: auto 283px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
   }
 }
 
 @media (min-width: $tablet-width) {
   .index-slogan {
     width: 668px;
+    min-height: 548px;
   }
 
   .index-slogan--image {
-    background-position: center;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-size: auto auto;
-    width: 668px;
-    height: 536px;
     background-repeat: no-repeat;
+    background-position: center -80px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
       background-size: auto auto;
+      background-position-x: center;
+      background-position-y: top;
     }
   }
 
   .index-slogan__wrapper {
     padding-top: 80px;
+    position: relative;
+    min-height: 680px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      bottom: 0;
+      left: 0;
+      height: 33px;
+      width: 100%;
+      display: block;
+    }
   }
 
   .index-slogan__title {
@@ -60,38 +78,32 @@
     line-height: 50px;
     padding-top: 74px;
   }
-
-  .index-slogan__wrapper .zigzag--fill {
-    padding-bottom: 120px;
-    background-color: #f9f9f9;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .index-slogan {
     width: 1050px;
+    height: 541px;
   }
 
   .index-slogan--image {
-    background-size: cover;
-    background-position: center -30px;
     background-image: url("../img/hero-desktop@1x.jpg");
     width: 1050px;
-    height: 541px;
     background-repeat: no-repeat;
+    background-size: auto auto;
+    background-position: center -80px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");
-      background-size: auto 541px;
+      width: 1050px;
+      background-repeat: no-repeat;
+      background-size: auto auto;
+      background-position: center -80px;
     }
   }
 
   .index-slogan__title {
     font-size: 53px;
     line-height: 57px;
-  }
-
-  .index-slogan__wrapper .zigzag--fill {
-    padding-bottom: 120px;
   }
 }

@@ -20,8 +20,21 @@
   .catalog-header {
     background-color: $color-background;
     min-height: 230px;
-    margin-bottom: 0;
+    margin-bottom: 55px;
     padding-top: 100px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      bottom: 0;
+      left: 0;
+      height: 33px;
+      width: 100%;
+      display: block;
+    }
   }
 
   .catalog-header__title {

@@ -116,6 +116,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    z-index: 2;
   }
 
   .main-nav__list {
@@ -156,6 +157,11 @@
   .main-nav__item--basket {
     text-align: right;
     margin-left: 35px;
+  }
+
+  .main-nav__item--basket svg {
+    position: absolute;
+    top: 34px;
   }
 
   .main-nav__item--search {
@@ -215,6 +221,7 @@
 
   .main-nav__list {
     order: -4;
+    margin-right: 0;
   }
 
   .main-nav__list a {
