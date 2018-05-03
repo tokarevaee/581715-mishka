@@ -94,14 +94,14 @@
     padding: 78px 50px 56px 46px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
-    background-size: auto auto;
+    background-size: 352px 458px;
     background-position: 0 0;
     margin-bottom: 50px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/review@2x.jpg");
       background-repeat: no-repeat;
-      background-size: auto auto;
+      background-size: 352px 458px;
       background-position: 0 0;
     }
   }
@@ -140,7 +140,7 @@
     padding: 75px 0 90px 179px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 6px 0;
+    background-size: 354px 457px;
     margin-bottom: 68px;
     margin-top: 9px;
     align-content: space-between;
@@ -149,6 +149,7 @@
       background-image: url("../img/review@2x.jpg");
       background-repeat: no-repeat;
       background-position: 6px 0;
+      background-size: 354px 457px;
     }
   }
 
