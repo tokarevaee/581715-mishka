@@ -56,15 +56,28 @@ a.products__item {
     flex-direction: row;
     justify-content: center;
     margin: 0 auto;
-    margin-bottom: 50px;
-    margin-top: -115px;
+    margin-bottom: 25px;
+    margin-top: -135px;
     width: 668px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      bottom: 0;
+      left: 0;
+      height: 33px;
+      width: 100%;
+      display: block;
+    }
   }
 
   .products__item--wrapper {
     width: 334px;
-    min-height: 103px;
-    padding: 30px;
+    min-height: 137px;
+    padding: 8px 30px 30px 40px;
     box-sizing: border-box;
 
     &:hover {
@@ -81,16 +94,26 @@ a.products__item {
     font-size: 20px;
     line-height: 30px;
   }
+
+  .products__item--decoration {
+    background-color: #63d1bb;
+  }
+
+  .products__item--toy {
+    background-color: #56c3b2;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .products {
-    margin-bottom: 70px;
+    //margin-top: -122px;
+    margin-bottom: 52px;
     width: 1050px;
   }
 
   .products__item--wrapper {
     width: 525px;
+    min-height: 136px;
   }
 
   a.products__item {

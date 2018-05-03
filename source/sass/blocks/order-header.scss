@@ -20,9 +20,22 @@
   .order-header {
     background-color: $color-background;
     min-height: 230px;
-    margin-bottom: 70px;
     padding-top: 95px;
     padding-bottom: 0;
+    margin-bottom: 55px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      bottom: 0;
+      left: 0;
+      height: 33px;
+      width: 100%;
+      display: block;
+    }
   }
 
   .order-header__title {
@@ -35,7 +48,6 @@
   .order-header {
     background-color: $color-background;
     min-height: 228px;
-    margin-bottom: 133px;
     padding-top: 96px;
   }
 

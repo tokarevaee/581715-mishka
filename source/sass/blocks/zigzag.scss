@@ -1,0 +1,26 @@
+.zigzag--line {
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-position: bottom left;
+  background-size: 307px 23px;
+  height: 23px;
+  width: 260px;
+  margin: 14px auto 20px auto;
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .zigzag--line {
+    background-size: 785px 23px;
+    width: 668px;
+    margin: 50px auto 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .zigzag--line {
+    margin: 0 auto;
+    margin-top: 37px;
+    width: 1050px;
+  }
+}
