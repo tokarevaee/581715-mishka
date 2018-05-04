@@ -13,17 +13,17 @@
   position: relative;
   margin-left: 40px;
   display: block;
-}
 
-.copyright__link::after {
-  content: "";
-  background-image: url("../img/htmlacademy.svg");
-  background-repeat: no-repeat;
-  width: 27px;
-  height: 34.09px;
-  top: 0;
-  right: -60px;
-  position: absolute;
+  &::after {
+    content: "";
+    background-image: url("../img/htmlacademy.svg");
+    background-repeat: no-repeat;
+    width: 27px;
+    height: 34.09px;
+    top: 0;
+    right: -60px;
+    position: absolute;
+  }
 }
 
 a.copyright__link {
@@ -41,10 +41,12 @@ a.copyright__link {
   .copyright__link {
     display: block;
     padding: 20px 0;
-  }
 
-  .copyright__link::after {
-    top: 18px;
+    &::after {
+      top: 18px;
+      width: 34px;
+      height: 34px;
+    }
   }
 }
 

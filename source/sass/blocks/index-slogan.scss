@@ -21,14 +21,14 @@
 
 .index-slogan--image {
   background-image: url("../img/hero-mobile@1x.jpg");
-  background-size: auto 283px;
+  background-size: 571px 348px;
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: top;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
-    background-size: auto 283px;
+    background-size: 571px 348px;
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: top;
@@ -43,15 +43,15 @@
 
   .index-slogan--image {
     background-image: url("../img/hero-tablet@1x.jpg");
-    background-size: auto auto;
+    background-size: 1155px 742px;
     background-repeat: no-repeat;
     background-position: center -80px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
-      background-size: auto auto;
-      background-position-x: center;
-      background-position-y: top;
+      background-size: 1155px 742px;
+      background-repeat: no-repeat;
+      background-position: center -80px;
     }
   }
 
@@ -95,9 +95,8 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");
-      width: 1050px;
       background-repeat: no-repeat;
-      background-size: auto auto;
+      background-size: 1050px auto;
       background-position: center -80px;
     }
   }
