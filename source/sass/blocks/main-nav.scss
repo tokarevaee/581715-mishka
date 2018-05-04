@@ -14,18 +14,20 @@
 
 .main-nav__item--search a,
 .main-nav__item--basket a {
+  fill: #d3d2d2;
+
   &:active {
     opacity: 0.3;
   }
 
   &:hover .icon-cart,
-  &:hover .icon-search {
+  &:hover .icon-search{
     fill: $color-blue;
   }
 }
 
-.main-nav__item--search svg,
-.main-nav__item--basket svg {
+.main-nav__item--search .icon-search,
+.main-nav__item--basket .icon-cart {
   position: absolute;
   top: 30px;
   left: 0;
@@ -159,7 +161,7 @@
     margin-left: 35px;
   }
 
-  .main-nav__item--basket svg {
+  .main-nav__item--basket .icon-cart {
     position: absolute;
     top: 34px;
   }
@@ -170,7 +172,7 @@
     position: relative;
   }
 
-  .main-nav__item--search svg {
+  .main-nav__item--search .icon-search {
     position: absolute;
     top: 37px;
     left: 35px;
@@ -239,7 +241,7 @@
     margin-left: 0;
   }
 
-  .main-nav__item--basket svg {
+  .main-nav__item--basket .icon-cart {
     position: absolute;
     top: 35px;
     left: 30px;

@@ -13,7 +13,7 @@
   padding-bottom: 21px;
 
   &:hover svg {
-    opacity: 0.7;
+    opacity: 0.5;
   }
 
   &:active {
@@ -28,7 +28,7 @@ a.products__item {
 }
 
 .products svg {
-  opacity: 0.5;
+  opacity: 0.3;
   display: inline-block;
 }
 

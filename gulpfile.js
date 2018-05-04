@@ -66,9 +66,15 @@ gulp.task("webp", function () {
 });
 
 var svgstore = require("gulp-svgstore");
+//var cheerio = require("gulp-cheerio");
 
 gulp.task("sprite", function () {
   return gulp.src("source/img/sprite/icon-*.svg")
+    //.pipe(cheerio({
+    //  run: function ($) {
+    //    $("[fill]").removeAttr("fill");
+    //  }
+    //}))
     .pipe(svgstore({
       inlineSvg: true
     }))

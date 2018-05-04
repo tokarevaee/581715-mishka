@@ -75,11 +75,13 @@
 }
 
 a.catalog__basket-icon {
-  &:hover path {
+  fill: #d3d2d2;
+
+  &:hover {
     fill: $color-blue;
   }
 
-  &:active path {
+  &:active {
     opacity: 0.3;
   }
 }
