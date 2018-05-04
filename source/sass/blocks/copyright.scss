@@ -14,16 +14,16 @@
   margin-left: 40px;
   display: block;
 
-    &::after {
-      content: "";
-      background-image: url("../img/htmlacademy.svg");
-      background-repeat: no-repeat;
-      width: 27px;
-      height: 34.09px;
-      top: 0;
-      right: -60px;
-      position: absolute;
-    }
+  &::after {
+    content: "";
+    background-image: url("../img/htmlacademy.svg");
+    background-repeat: no-repeat;
+    width: 27px;
+    height: 34.09px;
+    top: 0;
+    right: -60px;
+    position: absolute;
+  }
 }
 
 a.copyright__link {
