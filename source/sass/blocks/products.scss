@@ -106,7 +106,6 @@ a.products__item {
 
 @media (min-width: $desktop-width) {
   .products {
-    //margin-top: -122px;
     margin-bottom: 52px;
     width: 1050px;
   }
@@ -114,6 +113,7 @@ a.products__item {
   .products__item--wrapper {
     width: 525px;
     min-height: 136px;
+    padding: 8px 30px 30px 40px;
   }
 
   a.products__item {
