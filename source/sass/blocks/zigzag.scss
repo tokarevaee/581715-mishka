@@ -4,7 +4,7 @@
   background-position: bottom left;
   background-size: 307px 9px;
   height: 23px;
-  width: 260px;
+  width: 100%;
   margin: 14px auto 20px auto;
   display: block;
 }
@@ -12,7 +12,7 @@
 @media (min-width: $tablet-width) {
   .zigzag--line {
     background-size: 748px 15px;
-    width: 668px;
+    //width: 668px;
     margin: 50px auto 0 auto;
   }
 }
