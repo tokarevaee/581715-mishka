@@ -5,6 +5,7 @@
   border: #ededed solid 1px;
   margin: 0 auto;
   width: 260px;
+  margin-bottom: 58px;
 
   &:hover {
     box-shadow: 0 5px 5px 0 #ececec;
@@ -90,14 +91,14 @@
 
 .video-production__btn {
   padding: 0;
-  margin-bottom: 35px;
+  margin-bottom: 29px;
   min-width: 192px;
 }
 
 @media (min-width: $tablet-width) {
   .video-production {
     width: 668px;
-    margin-bottom: 72px;
+    margin-bottom: 68px;
   }
 
   .video-production__video {
@@ -125,7 +126,7 @@
     width: 583px;
     font-size: 15px;
     line-height: 30px;
-    margin-bottom: 32px;
+    margin-bottom: 29px;
   }
 
   .video-production__btn {
@@ -163,7 +164,7 @@
     order: -1;
     margin-bottom: 0;
     flex-grow: 1;
-    margin-right: 17px;
+    margin-right: 24px;
     background-image: url("../img/video-desktop@1x.jpg");
     background-size: cover;
 
@@ -189,15 +190,15 @@
   .video-production__btn {
     min-width: 231px;
     margin-top: auto;
-    margin-bottom: 61px;
+    margin-bottom: 54px;
   }
 
   .video-production__video-title {
     width: 232px;
-    padding-top: 48px;
+    padding-top: 47px;
     font-size: 20px;
-    margin-top: 50px;
-    margin-bottom: 33px;
+    margin-top: 56px;
+    margin-bottom: 31px;
     padding-left: 0;
 
     &::before {

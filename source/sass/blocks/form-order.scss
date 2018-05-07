@@ -1,6 +1,7 @@
 .form-order--wrapper {
   width: 260px;
   margin: 0 auto;
+  margin-bottom: 54px;
 }
 
 .form-order--wrapper-gray {
@@ -22,6 +23,7 @@
 
   .form-order--wrapper {
     width: 668px;
+    margin-bottom: 33px;
   }
 
   .form-order--gray {
@@ -32,6 +34,7 @@
   .form-order__note {
     font-size: 17px;
     line-height: 30px;
+    margin-bottom: 20px;
   }
 }
 
@@ -47,6 +50,6 @@
   p.form-order--wrapper,
   div.form-order--wrapper {
     width: 700px;
-    padding-top: 17px;
+    padding-top: 19px;
   }
 }

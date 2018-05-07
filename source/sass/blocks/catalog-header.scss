@@ -1,7 +1,7 @@
 .catalog-header {
   background-color: $color-background;
-  min-height: 179px;
-  margin-bottom: 33px;
+  min-height: 177px;
+  margin-bottom: 30px;
   padding: 72px 0;
   box-sizing: border-box;
   text-align: center;
@@ -19,9 +19,9 @@
 @media (min-width: $tablet-width) {
   .catalog-header {
     background-color: $color-background;
-    min-height: 230px;
-    margin-bottom: 55px;
-    padding-top: 100px;
+    min-height: 246px;
+    margin-bottom: 59px;
+    padding-top: 97px;
     position: relative;
 
     &::after {
@@ -46,8 +46,9 @@
 @media (min-width: $desktop-width) {
   .catalog-header {
     background-color: $color-background;
-    min-height: 228px;
+    min-height: 273px;
     padding-top: 96px;
+    margin-bottom: 112px;
   }
 
   .catalog-header__title {

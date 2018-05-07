@@ -1,6 +1,6 @@
 .order-header {
   background-color: $color-background;
-  height: 177px;
+  min-height: 177px;
   padding-top: 71px;
   box-sizing: border-box;
   text-align: center;
@@ -19,7 +19,7 @@
 @media (min-width: $tablet-width) {
   .order-header {
     background-color: $color-background;
-    min-height: 230px;
+    min-height: 245px;
     padding-top: 95px;
     padding-bottom: 0;
     margin-bottom: 55px;
@@ -47,12 +47,14 @@
 @media (min-width: $desktop-width) {
   .order-header {
     background-color: $color-background;
-    min-height: 228px;
+    min-height: 273px;
     padding-top: 96px;
+    margin-bottom: 89px;
   }
 
   .order-header__title {
     font-size: 53px;
     line-height: 57px;
+    margin-bottom: 22px;
   }
 }

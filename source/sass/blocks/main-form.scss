@@ -338,6 +338,7 @@
   .main-form__fieldset {
     padding: 30px 0;
     display: flex;
+    margin-bottom: 0;
   }
 
   .main-form__list {
@@ -417,7 +418,7 @@
   }
 
   .main-form__fieldset--type {
-    margin-bottom: 20px;
+    margin-bottom: 23px;
     padding-top: 31px;
     padding-bottom: 31px;
     box-sizing: border-box;
@@ -439,9 +440,10 @@
   }
 
   .main-form__fieldset--color {
-    padding-top: 48px;
+    padding-top: 46px;
     box-sizing: border-box;
-    min-height: 307px;
+    min-height: 304px;
+    margin-bottom: 0;
 
     & li {
       width: 160px;
@@ -459,8 +461,8 @@
   }
 
   .main-form__fieldset--name {
-    padding-top: 48px;
-    padding-bottom: 28px;
+    padding-top: 50px;
+    padding-bottom: 26px;
     box-sizing: border-box;
 
     & > div {
@@ -498,7 +500,7 @@
   }
 
   .main-form__fieldset--phone {
-    padding-top: 48px;
+    padding-top: 49px;
     padding-bottom: 23px;
 
     &::after {
@@ -524,7 +526,7 @@
 
   .main-form__fieldset--mail {
     padding-top: 0;
-    padding-bottom: 51px;
+    padding-bottom: 50px;
 
     &::after {
       bottom: 60px;
@@ -603,7 +605,7 @@
     min-width: 875px;
     min-height: 30px;
     padding-top: 45px;
-    padding-bottom: 35px;
+    padding-bottom: 36px;
 
     & ul {
       width: 875px;
@@ -617,32 +619,33 @@
 
   .main-form__fieldset--name {
     padding-top: 50px;
-    padding-bottom: 30px;
+    padding-bottom: 27px;
   }
 
   .main-form__fieldset--phone {
-    padding-top: 46px;
+    padding-top: 49px;
     padding-bottom: 0;
 
     &::after {
-      bottom: 20px;
-      right: 189px;
+      bottom: 17px;
+      right: 183px;
     }
   }
 
   .main-form__fieldset--mail {
     padding-top: 23px;
-    padding-bottom: 46px;
+    padding-bottom: 48px;
 
     &::after {
       bottom: 57px;
-      right: 189px;
+      right: 180px;
     }
   }
 
   .main-form__fieldset--add {
     margin-bottom: 0;
     padding-top: 51px;
+    padding-bottom: 22px;
   }
 
   .main-form__input,
