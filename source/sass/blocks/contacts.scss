@@ -27,9 +27,11 @@
   margin-bottom: 7px;
 }
 
-.contacts__map--google {
+.contacts__map-google {
   width: 100%;
   min-height: 455px;
+  border: none;
+  outline: none;
 }
 
 .contacts__map {
@@ -138,6 +140,11 @@
       background-size: cover;
       background-position: 0 0;
     }
+
+    .contacts__map-google {
+      border: none;
+      outline: none;
+    }
   }
 
   .contacts__btn {
@@ -201,9 +208,11 @@
     }
   }
 
-  .contacts__map--google {
+  .contacts__map-google {
     width: 525px;
     height: 455px;
+    border: none;
+    outline: none;
   }
 
   .contacts__title {

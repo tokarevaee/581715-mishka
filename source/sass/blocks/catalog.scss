@@ -92,19 +92,19 @@ a.catalog__basket-icon {
     width: 668px;
     margin: 0 auto;
     padding: 0;
-    margin-bottom: 63px;
+    margin-bottom: 51px;
   }
 
   .catalog__list {
-    margin-bottom: 54px;
+    margin-bottom: 51px;
   }
 
   .catalog__item {
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
-    height: 333px;
-    margin-bottom: 50px;
+    height: 331px;
+    margin-bottom: 55px;
   }
 
   .catalog__item:last-of-type {
@@ -154,7 +154,7 @@ a.catalog__basket-icon {
   .catalog {
     width: 1050px;
     margin: 0 auto;
-    margin-bottom: 107px;
+    margin-bottom: 58px;
   }
 
   .catalog__list {
@@ -171,6 +171,7 @@ a.catalog__basket-icon {
     width: 316px;
     height: 659px;
     box-sizing: border-box;
+    margin-bottom: 0;
   }
 
   .catalog__item:last-of-type {

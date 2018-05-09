@@ -53,13 +53,13 @@
     }
 
     & input {
-      margin-bottom: 8px;
+      margin-bottom: 9px;
       margin-top: 0;
     }
   }
 
   .main-form__fieldset--phone {
-    margin-bottom: 28px;
+    margin-bottom: 31px;
 
     & legend {
       margin-bottom: 23px;
@@ -72,7 +72,7 @@
     & input {
       margin-bottom: 0;
       margin-top: 0;
-      padding-bottom: 17px;
+      padding-bottom: 16px;
 
       &::after {
         bottom: 17px;
@@ -82,7 +82,7 @@
   }
 
   .main-form__fieldset--mail {
-    margin-bottom: 30px;
+    margin-bottom: 33px;
 
     & legend {
       margin-bottom: 21px;
@@ -95,15 +95,15 @@
     & input {
       margin-bottom: 0;
       margin-top: 0;
-      padding-bottom: 20px;
+      padding-bottom: 18px;
     }
   }
 
   .main-form__fieldset--add {
-    margin-bottom: 5px;
+    margin-bottom: 0;
 
     & legend {
-      margin-bottom: 25px;
+      margin-bottom: 23px;
     }
 
     & label {
@@ -113,6 +113,10 @@
     & textarea {
       margin-bottom: 0;
       margin-top: 0;
+      height: 144px;
+      box-sizing: border-box;
+      padding-top: 15px;
+      padding-left: 15px;
     }
   }
 }
@@ -146,6 +150,7 @@
     margin-right: -100%;
     background-clip: border-box;
     right: -20px;
+    top: -2px;
     position: relative;
   }
 }
@@ -213,10 +218,10 @@
   &::before {
     content: "";
     position: absolute;
-    left: -61px;
-    top: 0;
-    width: 38px;
-    height: 38px;
+    left: -63px;
+    top: 2px;
+    width: 37px;
+    height: 37px;
     border: 2px solid #000000;
   }
 }
@@ -224,8 +229,8 @@
 .main-form__input-checkbox:checked + .main-form__label--checkbox::after {
   content: "";
   position: absolute;
-  top: 11px;
-  left: -52px;
+  top: 13px;
+  left: -53px;
   width: 21px;
   height: 8px;
   border: 3px solid #000000;
@@ -279,6 +284,11 @@
     z-index: 3;
     opacity: 0.3;
   }
+
+  &:hover::after,
+  &:focus::after {
+    opacity: 1;
+  }
 }
 
 .main-form__fieldset--mail {
@@ -297,9 +307,13 @@
     z-index: 3;
     opacity: 0.3;
   }
+  &:hover::after,
+  &:focus::after {
+    opacity: 1;
+  }
 }
 
-.main-form__textarea--textarea {
+.main-form__textarea {
   border: $color-main solid 2px;
   width: 100%;
   box-sizing: border-box;
@@ -350,6 +364,14 @@
     justify-content: space-between;
   }
 
+  .main-form__input,
+  .main-form__textarea {
+    &::placeholder {
+      font-size: 19px;
+      line-height: 19px;
+    }
+  }
+
   .main-form__fieldset--name div,
   .main-form__fieldset--phone input,
   .main-form__fieldset--mail input,
@@ -377,6 +399,8 @@
   .main-form__footnote {
     font-size: 17px;
     line-height: 30px;
+    margin-top: 0;
+    margin-bottom: 28px;
   }
 
   .main-form__label {
@@ -440,7 +464,7 @@
   }
 
   .main-form__fieldset--color {
-    padding-top: 46px;
+    padding-top: 42px;
     box-sizing: border-box;
     min-height: 304px;
     margin-bottom: 0;
@@ -448,7 +472,7 @@
     & li {
       width: 160px;
       padding-left: 80px;
-      margin-bottom: 15px;
+      margin-bottom: 18px;
 
       &:last-child {
         margin-bottom: 0;
@@ -461,7 +485,7 @@
   }
 
   .main-form__fieldset--name {
-    padding-top: 50px;
+    padding-top: 47px;
     padding-bottom: 26px;
     box-sizing: border-box;
 
@@ -470,11 +494,11 @@
       flex-wrap: wrap;
     }
 
-    & .main-form__fieldset--wrapper {
+    & .main-form__fieldset-wrapper {
       display: flex;
       flex-wrap: nowrap;
       align-items: center;
-      margin-bottom: 8px;
+      margin-bottom: 9px;
       margin-left: 0;
     }
 
@@ -492,7 +516,7 @@
     & input {
       padding: 0;
       padding-bottom: 17px;
-      padding-left: 15px;
+      padding-left: 20px;
       margin-bottom: 0;
       margin-top: 0;
       position: relative;
@@ -543,14 +567,14 @@
 
     & input {
       margin-bottom: 0;
-      margin-top: 16px;
+      margin-top: 15px;
       padding-bottom: 17px;
       padding-left: 17px;
     }
   }
 
   .main-form__fieldset--add {
-    margin-bottom: 17px;
+    margin-bottom: 20px;
     padding-top: 48px;
 
     & legend {
@@ -562,6 +586,9 @@
     }
 
     & textarea {
+      height: 142px;
+      padding-left: 15px;
+      padding-top: 15px;
       margin-bottom: 0;
       margin-top: 0;
     }
@@ -569,6 +596,7 @@
 
   .main-form__btn {
     min-width: 230px;
+    height: 53px;
   }
 }
 
@@ -594,7 +622,12 @@
   }
 
   .main-form__fieldset--type {
-    margin-bottom: 22px;
+    margin-bottom: 21px;
+    padding-top: 33px;
+
+    & li {
+      margin-bottom: 25px;
+    }
 
     & ul {
       flex-direction: column;
@@ -605,7 +638,7 @@
     min-width: 875px;
     min-height: 30px;
     padding-top: 45px;
-    padding-bottom: 36px;
+    padding-bottom: 32px;
 
     & ul {
       width: 875px;
@@ -613,13 +646,14 @@
 
     & li {
       width: 160px;
-      margin-right: 20px;
+      margin-right: 23px;
+      margin-bottom: 17px;
     }
   }
 
   .main-form__fieldset--name {
     padding-top: 50px;
-    padding-bottom: 27px;
+    padding-bottom: 24px;
   }
 
   .main-form__fieldset--phone {
@@ -633,8 +667,8 @@
   }
 
   .main-form__fieldset--mail {
-    padding-top: 23px;
-    padding-bottom: 48px;
+    padding-top: 24px;
+    padding-bottom: 49px;
 
     &::after {
       bottom: 57px;
@@ -645,11 +679,11 @@
   .main-form__fieldset--add {
     margin-bottom: 0;
     padding-top: 51px;
-    padding-bottom: 22px;
+    padding-bottom: 32px;
   }
 
   .main-form__input,
-  .main-form__textarea--textarea {
+  .main-form__textarea {
     &::placeholder {
       font-size: 19px;
       line-height: 19px;

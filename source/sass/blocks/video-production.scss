@@ -5,7 +5,7 @@
   border: #ededed solid 1px;
   margin: 0 auto;
   width: 260px;
-  margin-bottom: 58px;
+  margin-bottom: 56px;
 
   &:hover {
     box-shadow: 0 5px 5px 0 #ececec;
@@ -52,32 +52,6 @@
     background-image: url("../img/video-mobile@2x.jpg");
     background-size: cover;
   }
-
-  &::before {
-    content: "";
-    background-image: url("../img/icon-play.svg");
-    width: 100.678px;
-    height: 76.891px;
-    display: block;
-    top: 33px;
-    left: 80px;
-    background-repeat: no-repeat;
-    position: absolute;
-    z-index: 9;
-
-    &:hover {
-      transform: scale(1.2);
-    }
-  }
-
-  &:hover::before {
-    transform: scale(1.2);
-  }
-
-  &:active::before {
-    transform: scale(0.8);
-    opacity: 0.6;
-  }
 }
 
 .video-production__video-about {
@@ -92,13 +66,38 @@
 .video-production__btn {
   padding: 0;
   margin-bottom: 29px;
-  min-width: 192px;
+  min-width: 194px;
+  height: 52px;
+}
+
+.video-production__play {
+  position: absolute;
+  top: 32px;
+  left: 74px;
+  height: 78px;
+  width: 111px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.6;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .video-production {
+    height: 700px;
     width: 668px;
-    margin-bottom: 68px;
+    margin-bottom: 64px;
+    justify-content: flex-start;
+    padding-bottom: 46px;
   }
 
   .video-production__video {
@@ -126,19 +125,20 @@
     width: 583px;
     font-size: 15px;
     line-height: 30px;
-    margin-bottom: 29px;
+    margin-bottom: 36px;
   }
 
   .video-production__btn {
     min-width: 583px;
-    margin-bottom: 44px;
+    margin-bottom: 0;
+    margin-top: 0;
   }
 
   .video-production__video-title {
     width: 583px;
     padding: 38px 0;
     font-size: 20px;
-    padding-left: 60px;
+    padding-left: 63px;
     height: 97px;
 
     &::before {
@@ -146,16 +146,26 @@
       left: 0;
     }
   }
+
+  .video-production__play {
+    position: absolute;
+    top: 194px;
+    left: 280px;
+    height: 77px;
+    width: 109px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .video-production {
     width: 1050px;
-    height: 458px;
+    height: 453px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: flex-start;
+    margin-bottom: 105px;
+    padding-bottom: 0;
   }
 
   .video-production__video {
@@ -190,14 +200,14 @@
   .video-production__btn {
     min-width: 231px;
     margin-top: auto;
-    margin-bottom: 54px;
+    margin-bottom: 60px;
   }
 
   .video-production__video-title {
     width: 232px;
     padding-top: 47px;
     font-size: 20px;
-    margin-top: 56px;
+    margin-top: 48px;
     margin-bottom: 31px;
     padding-left: 0;
 
