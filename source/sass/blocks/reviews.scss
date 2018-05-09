@@ -167,10 +167,15 @@
   .reviews__text {
     width: 795px;
     margin-bottom: 0;
+    margin-top: -14px;
 
     & br {
       display: block;
     }
+  }
+
+  .reviews__author-name {
+    margin-bottom: 11px;
   }
 
   .reviews__btn {

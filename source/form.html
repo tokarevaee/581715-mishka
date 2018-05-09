@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Вязание на заказ</title>
-    <link href="css/style.min.css" rel="stylesheet">
-    <link rel="preload" href="fonts/opensans.woff2" type="font/woff2">
-    <link rel="preload" href="fonts/opensansbold.woff2" type="font/woff2">
+    <link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" type="font/woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
   </head>
   <body>
@@ -132,10 +132,16 @@
             <fieldset  class="main-form__fieldset main-form__fieldset--phone form-order__wrapper">
               <legend class="main-form__title">Тел</legend>
               <input class="main-form__input main-form__input--phone" id="phone" type="tel" name="phone" placeholder="+7 XXX XX XX*" required>
+              <svg class="icon-phone" width="25px" height="25px" role="presentation">
+                <use xlink:href="#icon-phone"></use>
+              </svg>
             </fieldset>
             <fieldset  class="email main-form__fieldset main-form__fieldset--mail form-order__wrapper">
               <legend class="main-form__title">E-mail</legend>
               <input class="main-form__input main-form__input--email" id="email" type="email" name="email" placeholder="Ваш Email*" required>
+              <svg class="icon-mail" width="32px" height="32px" role="presentation">
+                <use xlink:href="#icon-mail"></use>
+              </svg>
             </fieldset>
           </div>
           <fieldset  class="add-form main-form__fieldset main-form__fieldset--add form-order__wrapper">
@@ -183,7 +189,7 @@
         </div>
       </div>
     </footer>
-    <script src="js/svgxuse.min.js"></script>
-    <script src="js/script.min.js"></script>
+    <script src="js/svgxuse.min.js" as="script"></script>
+    <script src="js/script.min.js" as="script"></script>
   </body>
 </html>

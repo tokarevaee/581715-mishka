@@ -31,6 +31,14 @@ gulp.task("jsmin", function () {
     .pipe(gulp.dest("build/js"));
 });
 
+var htmlmin = require("gulp-htmlmin");
+
+gulp.task("minify", function() {
+  return gulp.src("source/*.html")
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest("build/"));
+});
+
 gulp.task("serve", function() {
   server.init({
     server: "build/"
@@ -123,6 +131,7 @@ gulp.task("build", function (done) {
     "clean",
     "copy",
     "jsmin",
+    "minify",
     "style",
     "sprite",
     "html",

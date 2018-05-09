@@ -67,10 +67,30 @@
 
   .advantages__item {
     width: 334px;
-    font-size: 20px;
+    font-size: 21px;
     line-height: 22px;
-    padding-top: 50px;
-    margin-bottom: 62px;
+    padding-top: 54px;
+    margin-bottom: 59px;
+
+    & svg {
+      top: 0;
+      left: 5px;
+    }
+
+    & .icon-feature-heart {
+      top: 5px;
+      left: 10px;
+    }
+
+    & .icon-feature-rocket {
+      top: 4px;
+      left: -4px;
+    }
+
+    & .icon-feature-flower {
+      top: 0;
+      left: 9px;
+    }
   }
 }
 

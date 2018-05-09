@@ -73,16 +73,13 @@
       margin-bottom: 0;
       margin-top: 0;
       padding-bottom: 16px;
-
-      &::after {
-        bottom: 17px;
-        right: 9px;
-      }
+      position: relative;
     }
   }
 
   .main-form__fieldset--mail {
     margin-bottom: 33px;
+    position: relative;
 
     & legend {
       margin-bottom: 21px;
@@ -96,6 +93,13 @@
       margin-bottom: 0;
       margin-top: 0;
       padding-bottom: 18px;
+    }
+
+    & .icon-mail {
+      position: absolute;
+      right: 5px;
+      top: 30px;
+      fill: #f1f1f1;
     }
   }
 
@@ -118,6 +122,42 @@
       padding-top: 15px;
       padding-left: 15px;
     }
+  }
+}
+
+.main-form__fieldset--phone {
+  position: relative;
+
+  & .icon-phone {
+    position: absolute;
+    right: 8px;
+    top: 34px;
+    fill: $color-placeholder;
+  }
+}
+
+.main-form__input--phone {
+  &:hover ~ .icon-phone,
+  &:focus ~ .icon-phone {
+    fill: $color-blue;
+  }
+}
+
+.main-form__fieldset--mail {
+  position: relative;
+
+  & .icon-mail {
+    position: absolute;
+    right: 5px;
+    top: 35px;
+    fill: $color-placeholder;
+  }
+}
+
+.main-form__input--email {
+  &:hover ~ .icon-mail,
+  &:focus ~ .icon-mail {
+    fill: $color-blue;
   }
 }
 
@@ -268,51 +308,6 @@
   }
 }
 
-.main-form__fieldset--phone {
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    background-image: url("../img/icon-phone.svg");
-    background-repeat: no-repeat;
-    width: 24.829px;
-    height: 24.333px;
-    display: block;
-    bottom: 17px;
-    right: 9px;
-    z-index: 3;
-    opacity: 0.3;
-  }
-
-  &:hover::after,
-  &:focus::after {
-    opacity: 1;
-  }
-}
-
-.main-form__fieldset--mail {
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    background-image: url("../img/icon-mail.svg");
-    background-repeat: no-repeat;
-    width: 32px;
-    height: 32px;
-    display: block;
-    bottom: 10px;
-    right: 4px;
-    z-index: 3;
-    opacity: 0.3;
-  }
-  &:hover::after,
-  &:focus::after {
-    opacity: 1;
-  }
-}
-
 .main-form__textarea {
   border: $color-main solid 2px;
   width: 100%;
@@ -442,7 +437,7 @@
   }
 
   .main-form__fieldset--type {
-    margin-bottom: 23px;
+    margin-bottom: 21px;
     padding-top: 31px;
     padding-bottom: 31px;
     box-sizing: border-box;
@@ -464,7 +459,7 @@
   }
 
   .main-form__fieldset--color {
-    padding-top: 42px;
+    padding-top: 44px;
     box-sizing: border-box;
     min-height: 304px;
     margin-bottom: 0;
@@ -485,8 +480,8 @@
   }
 
   .main-form__fieldset--name {
-    padding-top: 47px;
-    padding-bottom: 26px;
+    padding-top: 50px;
+    padding-bottom: 24px;
     box-sizing: border-box;
 
     & > div {
@@ -527,11 +522,6 @@
     padding-top: 49px;
     padding-bottom: 23px;
 
-    &::after {
-      bottom: 40px;
-      right: 26px;
-    }
-
     & legend {
       margin-bottom: 23px;
     }
@@ -545,6 +535,11 @@
       margin-top: 16px;
       padding-bottom: 17px;
       padding-left: 17px;
+    }
+
+    & .icon-phone {
+      right: 24px;
+      top: 60px;
     }
   }
 
@@ -571,10 +566,15 @@
       padding-bottom: 17px;
       padding-left: 17px;
     }
+
+    & .icon-mail {
+      right: 20px;
+      top: 11px;
+    }
   }
 
   .main-form__fieldset--add {
-    margin-bottom: 20px;
+    margin-bottom: 23px;
     padding-top: 48px;
 
     & legend {
@@ -586,7 +586,7 @@
     }
 
     & textarea {
-      height: 142px;
+      height: 144px;
       padding-left: 15px;
       padding-top: 15px;
       margin-bottom: 0;
@@ -660,9 +660,9 @@
     padding-top: 49px;
     padding-bottom: 0;
 
-    &::after {
-      bottom: 17px;
+    & .icon-phone {
       right: 183px;
+      top: 60px;
     }
   }
 
@@ -670,16 +670,16 @@
     padding-top: 24px;
     padding-bottom: 49px;
 
-    &::after {
-      bottom: 57px;
-      right: 180px;
+    & .icon-email {
+      right: 179px;
+      top: 35px;
     }
   }
 
   .main-form__fieldset--add {
     margin-bottom: 0;
     padding-top: 51px;
-    padding-bottom: 32px;
+    padding-bottom: 30px;
   }
 
   .main-form__input,
