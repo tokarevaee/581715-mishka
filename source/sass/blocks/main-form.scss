@@ -459,7 +459,7 @@
   }
 
   .main-form__fieldset--color {
-    padding-top: 44px;
+    padding-top: 43px;
     box-sizing: border-box;
     min-height: 304px;
     margin-bottom: 0;
@@ -480,7 +480,7 @@
   }
 
   .main-form__fieldset--name {
-    padding-top: 50px;
+    padding-top: 49px;
     padding-bottom: 24px;
     box-sizing: border-box;
 
@@ -520,7 +520,7 @@
 
   .main-form__fieldset--phone {
     padding-top: 49px;
-    padding-bottom: 23px;
+    padding-bottom: 24px;
 
     & legend {
       margin-bottom: 23px;
@@ -574,7 +574,7 @@
   }
 
   .main-form__fieldset--add {
-    margin-bottom: 23px;
+    margin-bottom: 22px;
     padding-top: 48px;
 
     & legend {
@@ -603,7 +603,7 @@
 @media (min-width: $desktop-width) {
   .main-form__title {
     margin-bottom: 0;
-    margin-top: 20px;
+    margin-top: 21px;
     margin-left: 63px;
   }
 
@@ -623,7 +623,7 @@
 
   .main-form__fieldset--type {
     margin-bottom: 21px;
-    padding-top: 33px;
+    padding-top: 31px;
 
     & li {
       margin-bottom: 25px;
@@ -653,7 +653,11 @@
 
   .main-form__fieldset--name {
     padding-top: 50px;
-    padding-bottom: 24px;
+    padding-bottom: 27px;
+
+    & .main-form__fieldset-wrapper {
+      margin-bottom: 8px;
+    }
   }
 
   .main-form__fieldset--phone {
@@ -670,15 +674,15 @@
     padding-top: 24px;
     padding-bottom: 49px;
 
-    & .icon-email {
-      right: 179px;
-      top: 35px;
+    & .icon-mail {
+      right: 180px;
+      top: 34px;
     }
   }
 
   .main-form__fieldset--add {
     margin-bottom: 0;
-    padding-top: 51px;
+    padding-top: 50px;
     padding-bottom: 30px;
   }
 

@@ -52,7 +52,7 @@
 @media (min-width: $tablet-width) {
   .advantages {
     padding-top: 48px;
-    width: 668px;
+    width: 673px;
     margin-bottom: 13px;
     margin-top: 0;
   }
@@ -67,10 +67,10 @@
 
   .advantages__item {
     width: 334px;
-    font-size: 21px;
+    font-size: 20px;
     line-height: 22px;
-    padding-top: 54px;
-    margin-bottom: 59px;
+    padding-top: 55px;
+    margin-bottom: 58px;
 
     & svg {
       top: 0;
@@ -96,17 +96,18 @@
 
 @media (min-width: $desktop-width) {
   .advantages {
-    width: 700px;
+    width: 710px;
     margin-bottom: 12px;
     padding-top: 61px;
   }
 
   .advantages__list {
     height: 485px;
+    padding-left: 5px;
   }
 
   .advantages__item {
     width: 350px;
-    padding-top: 52px;
+    padding-top: 54px;
   }
 }

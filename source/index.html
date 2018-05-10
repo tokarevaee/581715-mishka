@@ -12,7 +12,7 @@
   <body>
     <div class="none"><include src="build/img/sprite.svg"></include></div>
     <header class="page-header">
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <a class="page-header__logo">
           <picture>
@@ -21,41 +21,41 @@
             <img src="img/logo-mobile.svg" width="85" height="35" alt="Мишка">
           </picture>
         </a>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="form.html">Вязание на заказ</a>
-            </li>
-          </ul>
-          <ul class="main-nav__user-list">
-            <li class="main-nav__item main-nav__item--search">
-              <a href="#">
-                <svg class="icon-search"  width="17.6" height="17.6" role="presentation">
-                  <use xlink:href="#icon-search"></use>
-                </svg>
-                <span>Поиск по сайту</span>
-              </a>
-            </li>
-            <li class="main-nav__item main-nav__item--basket">
-              <a href="#">
-                <svg class="icon-cart"  width="20" height="19" role="presentation">
-                  <use xlink:href="#icon-cart"></use>
-                </svg>
-                <span>Корзина: </span><span class="basket-volume">пока пуста</span>
-              </a>
-            </li>
-          </ul>
-          <ul class="main-nav__sale">
-            <li class="main-nav__item">
-              <a href="#">Новые поступления</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#">Распродажа</a>
-            </li>
-          </ul>
-          <p>Бесплатная доставка по России</p>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="main-nav__user-list">
+          <li class="main-nav__item main-nav__item--search">
+            <a href="#">
+              <svg class="icon-search"  width="17.6" height="17.6" role="presentation">
+                <use xlink:href="#icon-search"></use>
+              </svg>
+              <span>Поиск по сайту</span>
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--basket">
+            <a href="#">
+              <svg class="icon-cart"  width="20" height="19" role="presentation">
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+              <span>Корзина: </span><span class="basket-volume">пока пуста</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="main-nav__sale">
+          <li class="main-nav__item">
+            <a href="#">Новые поступления</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Распродажа</a>
+          </li>
+        </ul>
+        <p>Бесплатная доставка по России</p>
       </nav>
     </header>
     <main class="page-main">
@@ -255,7 +255,7 @@
       </form>
     </div>
     <div class="popup-overlay"></div>
-    <script src="js/svgxuse.min.js" as="script"></script>
-    <script src="js/script.min.js" as="script"></script>
+    <script src="js/svgxuse.min.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

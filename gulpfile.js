@@ -19,7 +19,8 @@ gulp.task("style", function () {
     .pipe(gulp.dest("source/css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css"));
+    .pipe(gulp.dest("build/css"))
+    .pipe(server.stream());
 });
 
 var jsmin = require("gulp-jsmin");
@@ -41,11 +42,11 @@ gulp.task("minify", function() {
 
 gulp.task("serve", function() {
   server.init({
-    server: "build/"
-    //notify: false,
-    //open: true,
-    //cors: true,
-    //ui: false
+    server: "build/",
+    notify: false,
+    open: true,
+    cors: true,
+    ui: false
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
@@ -104,7 +105,8 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
-    .pipe(gulp.dest("build"));
+    .pipe(gulp.dest("build"))
+    .pipe(server.stream());
 });
 
 gulp.task("copy", function () {
