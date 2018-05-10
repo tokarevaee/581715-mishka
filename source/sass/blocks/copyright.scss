@@ -1,6 +1,6 @@
 .copyright {
   width: 260px;
-  min-height: 80px;
+  min-height: 75px;
   display: flex;
   align-items: center;
 }
@@ -13,6 +13,7 @@
   position: relative;
   margin-left: 40px;
   display: block;
+  padding-right: 60px;
 
   &::after {
     content: "";
@@ -20,8 +21,8 @@
     background-repeat: no-repeat;
     width: 40px;
     height: 40px;
-    top: -5px;
-    right: -60px;
+    top: -6px;
+    right: 0;
     position: absolute;
   }
 }
@@ -41,11 +42,11 @@ a.copyright__link {
   .copyright__link {
     display: block;
     padding: 20px 0;
+    padding-right: 56px;
 
     &::after {
-      top: 18px;
-      width: 34px;
-      height: 34px;
+      top: 14px;
+      right: -10px;
     }
   }
 }
@@ -54,6 +55,5 @@ a.copyright__link {
   .copyright {
     display: flex;
     justify-content: flex-end;
-    width: 213px;
   }
 }

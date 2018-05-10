@@ -1,7 +1,7 @@
 .social {
   display: flex;
   justify-content: center;
-  padding: 26px 0 20px 0;
+  padding: 25px 0 25px 0;
   width: 260px;
   box-shadow: 0 1px 0 0 #e5e5e5;
 }
@@ -9,7 +9,6 @@
 .social__link:not(:first-child) {
   margin-left: 39px;
 }
-
 
 a.social__link {
   &:hover {
@@ -26,14 +25,12 @@ a.social__link {
   .social {
     box-shadow: none;
     padding: 0;
-    justify-content: flex-end;
     width: 240px;
+    align-items: flex-end;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .social {
-    justify-content: center;
-    align-items: center;
+  .icon-instagram {
+    width: 22px;
+    height: 22px;
   }
 }

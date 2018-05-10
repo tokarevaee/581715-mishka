@@ -4,6 +4,7 @@
   src: url("../fonts/opensans.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -12,6 +13,7 @@
   src: url("../fonts/opensansbold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
 a {
@@ -42,7 +44,7 @@ h2,
 h3 {
   margin: 0;
 }
-//
-//div, ul, li, a, section, tr, td, table{
-//  outline: 1px red solid;
-//}
+
+.none {
+  display: none;
+}
