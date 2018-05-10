@@ -56,4 +56,11 @@ a.copyright__link {
     display: flex;
     justify-content: flex-end;
   }
+
+  .copyright__link {
+    &::after {
+      top: 15px;
+      right: -5px;
+    }
+  }
 }
