@@ -1,7 +1,9 @@
 {
-  "name": "mishka",
-  "version": "14.0.0",
-  "private": true,
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
   "description": "Личный проект «Мишка» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
@@ -27,18 +29,6 @@
     "stylelint": "9.2.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
-  "scripts": {
-    "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
-    "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp build",
-    "start": "npm run build && gulp serve"
-  },
-  "browserslist": [
-    "last 2 versions",
-    "IE 11",
-    "Firefox ESR"
-  ],
   "editorconfig-cli": [
     "*.json",
     "*.js",
@@ -49,5 +39,14 @@
   ],
   "engines": {
     "node": "8.11"
-  }
+  },
+  "private": true,
+  "scripts": {
+    "build": "gulp build",
+    "editorconfig": "editorconfig-cli",
+    "start": "npm run build \u0026\u0026 gulp serve",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "test": "npm run editorconfig \u0026\u0026 npm run stylelint"
+  },
+  "version": "14.0.0"
 }
