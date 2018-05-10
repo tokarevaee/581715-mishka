@@ -27,6 +27,7 @@
   text-align: center;
   display: block;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .page-header p {
@@ -44,7 +45,8 @@
   .page-header__logo {
     display: inline-block;
     order: -3;
-    padding-top: 20px;
+    padding-top: 23px;
+    padding-bottom: 0;
   }
 
   .page-header__logo img {
@@ -71,7 +73,7 @@
   .page-header__logo {
     min-width: 170px;
     order: -3;
-    padding-top: 10px;
+    padding-top: 9px;
   }
 
   .page-header__logo img {

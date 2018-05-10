@@ -5,13 +5,12 @@
   margin: 0 auto;
   width: 260px;
   min-height: 575px;
-  margin-bottom: 34px;
+  margin-bottom: 24px;
   padding-bottom: 5px;
-  justify-content: space-between;
 }
 
 .reviews__title {
-  margin-bottom: 0;
+  margin-bottom: 25px;
 }
 
 .reviews__text {
@@ -20,6 +19,7 @@
   color: #444444;
   width: 260px;
   margin: 0;
+  margin-bottom: 27px;
 
   & br {
     display: none;
@@ -27,7 +27,7 @@
 }
 
 .reviews__author {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .reviews__author-name {
@@ -47,10 +47,11 @@
 
 .reviews__arrow {
   display: flex;
+  margin-top: 28px;
 }
 
 .reviews__btn {
-  margin-top: 10px;
+  margin-top: 39px;
 }
 
 .reviews__prev,
@@ -88,7 +89,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: space-between;
+    align-items: flex-start;
     width: 668px;
     min-height: 340px;
     padding: 78px 50px 56px 46px;
@@ -109,17 +110,28 @@
   .reviews__text {
     font-size: 17px;
     width: 668px;
-    margin-bottom: 15px;
+    margin-bottom: 56px;
+    margin-top: 20px;
+  }
+
+  .reviews__author-name {
+    font-size: 18px;
+    line-height: 24px;
   }
 
   .reviews__btn {
     order: -1;
-    margin-top: 0;
+    margin-top: 5px;
     min-width: 175px;
   }
 
   .reviews__title {
     order: -2;
+    margin-left: -4px;
+  }
+
+  .reviews__arrow {
+    margin-top: 2px;
   }
 
   .reviews__prev,
@@ -137,11 +149,11 @@
     justify-content: space-between;
     width: 875px;
     min-height: 295px;
-    padding: 75px 0 90px 179px;
+    padding: 71px 0 90px 175px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-size: 354px 457px;
-    margin-bottom: 68px;
+    margin-bottom: 60px;
     margin-top: 9px;
     align-content: space-between;
 
@@ -156,14 +168,20 @@
   .reviews__text {
     width: 795px;
     margin-bottom: 0;
+    margin-top: -14px;
 
     & br {
       display: block;
     }
   }
 
+  .reviews__author-name {
+    margin-bottom: 11px;
+  }
+
   .reviews__btn {
     order: -1;
+    margin-top: 7px;
   }
 
   .reviews__title {
