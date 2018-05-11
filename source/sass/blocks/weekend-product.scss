@@ -35,6 +35,7 @@ p.weekend-product__description {
 }
 
 .weekend-product__about {
+  width: 100%;
   font-size: 15px;
   line-height: 24px;
   color: #444444;
@@ -43,7 +44,7 @@ p.weekend-product__description {
 }
 
 .weekend-product__about tr {
-  border-bottom: #000000 solid 1px;
+  box-shadow: 0 1px 0 0 #ececec;
   padding: 10px 0;
 }
 
@@ -182,10 +183,6 @@ p.weekend-product__description {
     line-height: 57px;
     font-weight: bold;
     padding-bottom: 0;
-  }
-
-  .weekend-product__about {
-    margin-bottom: auto;
   }
 
   .weekend-product__price {

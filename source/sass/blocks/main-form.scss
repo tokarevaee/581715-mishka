@@ -53,7 +53,7 @@
     }
 
     & input {
-      margin-bottom: 9px;
+      margin-bottom: 8px;
       margin-top: 0;
     }
   }
@@ -107,7 +107,7 @@
     margin-bottom: 0;
 
     & legend {
-      margin-bottom: 23px;
+      margin-bottom: 25px;
     }
 
     & label {
@@ -115,6 +115,8 @@
     }
 
     & textarea {
+      max-width: 260px;
+      max-height: 144px;
       margin-bottom: 0;
       margin-top: 0;
       height: 144px;
@@ -310,7 +312,6 @@
 
 .main-form__textarea {
   border: $color-main solid 2px;
-  width: 100%;
   box-sizing: border-box;
   margin-bottom: 15px;
   padding: 10px;
@@ -586,6 +587,9 @@
     }
 
     & textarea {
+      width: 500px;
+      max-width: 500px;
+      max-height: 144px;
       height: 144px;
       padding-left: 15px;
       padding-top: 15px;
@@ -684,6 +688,13 @@
     margin-bottom: 0;
     padding-top: 50px;
     padding-bottom: 30px;
+
+
+    & textarea {
+      max-width: 700px;
+      max-height: 144px;
+      height: 144px;
+    }
   }
 
   .main-form__input,
