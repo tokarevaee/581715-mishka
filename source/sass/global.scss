@@ -16,10 +16,6 @@
   font-display: swap;
 }
 
-a {
-  text-decoration: none;
-}
-
 body {
   min-width: 320px;
   margin: 0;
@@ -30,19 +26,13 @@ body {
   font-style: normal;
 }
 
-ul {
-  list-style: none;
+a {
+  text-decoration: none;
 }
 
 img {
   max-width: 100%;
   height: auto;
-}
-
-h1,
-h2,
-h3 {
-  margin: 0;
 }
 
 .none {

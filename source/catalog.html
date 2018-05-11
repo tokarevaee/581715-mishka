@@ -141,6 +141,14 @@
       <div class="video-production">
         <h3 class="video-production__video-title">Процесс производства</h3>
         <div class="video-production__video">
+          <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
+            <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img class="video-production__video" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Процесс производства">
+          </picture>
           <button class="video-production__play">
             <img src="img/icon-play.svg" alt="Play" class="icon-play" width="111" height="78">
           </button>
@@ -148,7 +156,7 @@
         <p class="video-production__video-about">
           По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
         </p>
-        <button class="btn video-production__btn">Сделать заказ</button>
+        <a href="#" class="btn video-production__btn">Сделать заказ</a>
       </div>
     </main>
     <footer class="page-footer">
@@ -209,6 +217,7 @@
       </form>
     </div>
     <div class="popup-overlay"></div>
+    <script src="js/picturefill.min.js"></script>
     <script src="js/svgxuse.min.js"></script>
     <script src="js/script.min.js"></script>
   </body>

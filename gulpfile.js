@@ -79,7 +79,7 @@ var cheerio = require("gulp-cheerio");
 var replace = require("gulp-replace");
 
 gulp.task("sprite", function () {
-  return gulp.src("source/img/sprite/icon-*.svg")
+  return gulp.src("source/img/sprite/*.svg")
 
     .pipe(cheerio({
       run: function ($) {

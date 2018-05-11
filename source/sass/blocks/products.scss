@@ -13,6 +13,10 @@
   padding-bottom: 21px;
   min-height: 102px;
 
+  &h2 {
+    margin: 0;
+  }
+
   &:hover svg {
     opacity: 0.5;
   }

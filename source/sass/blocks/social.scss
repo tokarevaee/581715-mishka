@@ -1,8 +1,9 @@
 .social {
   display: flex;
   justify-content: center;
-  padding: 25px 0 25px 0;
-  width: 260px;
+  align-items: center;
+  padding: 25px 0;
+  //width: 260px;
   box-shadow: 0 1px 0 0 #e5e5e5;
 }
 
@@ -29,8 +30,8 @@ a.social__link {
     align-items: flex-end;
   }
 
-  .icon-instagram {
-    width: 22px;
-    height: 22px;
+
+  .social svg {
+    //transform: scale(x,y);
   }
 }

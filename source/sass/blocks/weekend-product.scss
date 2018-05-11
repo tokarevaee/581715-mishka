@@ -8,10 +8,12 @@
 }
 
 .weekend-product__main-title {
+  margin: 0;
   margin-bottom: 25px;
 }
 
 .weekend-product__title {
+  margin: 0;
   text-transform: uppercase;
   color: $color-blue;
   font-size: 17px;
@@ -20,6 +22,7 @@
 }
 
 .weekend-product__name {
+  margin: 0;
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
@@ -30,7 +33,7 @@ p.weekend-product__description {
   font-size: 15px;
   line-height: 24px;
   color: #444444;
-  width: 290px;
+  width: 260px;
   margin: 0 0 15px 0;
 }
 
@@ -97,6 +100,7 @@ p.weekend-product__description {
   }
 
   .weekend-product__about {
+    width: 290px;
     margin-bottom: 52px;
   }
 
@@ -123,6 +127,7 @@ p.weekend-product__description {
   }
 
   p.weekend-product__description {
+    width: 290px;
     font-size: 17px;
     line-height: 30px;
     margin-bottom: 35px;
