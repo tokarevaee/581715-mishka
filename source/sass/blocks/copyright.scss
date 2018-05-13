@@ -1,6 +1,7 @@
 .copyright {
   width: 260px;
-  //min-height: 75px;
+
+  //padding: 15px 0;
 }
 
 .copyright__link {
@@ -8,12 +9,16 @@
   line-height: 24px;
   font-weight: bold;
   color: $color-main;
-  //margin-left: 40px;
   position: relative;
-  display: block;
+  //display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
 
   & span {
     display: block;
+    //margin: 0 auto;
     padding: 25px 10px 0 37px;
   }
 }
@@ -44,8 +49,9 @@ a.copyright__link {
   }
 
   .copyright__link {
-    padding-right: 56px;
+    padding-right: 57px;
     text-align: right;
+    justify-content: flex-end;
 
     & span {
       display: block;
@@ -54,22 +60,18 @@ a.copyright__link {
   }
 
   .copyright-icon {
-    top: -10px;
-    right: -7px;
+    top: -9px;
+    right: -10px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .copyright {
-    //display: flex;
-    //justify-content: flex-end;
-    //align-items: center;
+  .copyright__link {
+    padding-right: 56px;
   }
 
-  .copyright__link {
-    //&::after {
-    //  top: 15px;
-    //  right: -5px;
-    //}
+  .copyright-icon {
+    top: -12px;
+    right: -6px;
   }
 }

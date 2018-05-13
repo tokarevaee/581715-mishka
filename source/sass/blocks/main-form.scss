@@ -5,11 +5,32 @@
 
 @media (max-width: $mobile-width-only) {
   .main-form__fieldset--type {
-    margin-bottom: 28px;
+    margin-bottom: 33px;
 
     & li {
-      padding-left: 60px;
+      padding-left: 62px;
       margin-bottom: 0;
+    }
+
+    & legend {
+      margin-bottom: 22px;
+    }
+
+    & label {
+      margin-bottom: 0;
+      padding: 12px 0 11px 0;
+    }
+  }
+
+  .main-form__fieldset--color {
+    margin-bottom: 29px;
+
+    & li {
+      margin-bottom: 17px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     & legend {
@@ -21,28 +42,8 @@
     }
   }
 
-  .main-form__fieldset--color {
-    margin-bottom: 28px;
-
-    & li {
-      margin-bottom: 18px;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-
-    & legend {
-      margin-bottom: 24px;
-    }
-
-    & label {
-      margin-bottom: 0;
-    }
-  }
-
   .main-form__fieldset--name {
-    margin-bottom: 23px;
+    margin-bottom: 20px;
 
     & legend {
       margin-bottom: 17px;
@@ -53,16 +54,17 @@
     }
 
     & input {
-      margin-bottom: 8px;
+      margin-bottom: 11px;
       margin-top: 0;
     }
   }
 
   .main-form__fieldset--phone {
-    margin-bottom: 31px;
+    margin-bottom: 34px;
+    height: 73px;
 
     & legend {
-      margin-bottom: 23px;
+      margin-bottom: 21px;
     }
 
     & label {
@@ -78,8 +80,9 @@
   }
 
   .main-form__fieldset--mail {
-    margin-bottom: 33px;
+    margin-bottom: 34px;
     position: relative;
+    height: 73px;
 
     & legend {
       margin-bottom: 21px;
@@ -92,7 +95,7 @@
     & input {
       margin-bottom: 0;
       margin-top: 0;
-      padding-bottom: 18px;
+      padding-bottom: 16px;
     }
 
     & .icon-mail {
@@ -107,7 +110,7 @@
     margin-bottom: 0;
 
     & legend {
-      margin-bottom: 25px;
+      margin-bottom: 24px;
     }
 
     & label {
@@ -117,7 +120,7 @@
     & textarea {
       max-width: 260px;
       min-width: 260px;
-      height: 144px;
+      height: 142px;
       margin-bottom: 0;
       margin-top: 0;
       box-sizing: border-box;
@@ -167,8 +170,8 @@
   color: $color-light-black;
   font-size: 14px;
   line-height: 16px;
-  margin-bottom: 30px;
-  margin-top: 11px;
+  margin-bottom: 31px;
+  margin-top: 13px;
 }
 
 .main-form__title {
@@ -226,10 +229,10 @@
   &::before {
     content: "";
     position: absolute;
-    left: -61px;
+    left: -62px;
     top: 2px;
-    width: 38px;
-    height: 38px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
     border: 2px solid #000000;
   }
@@ -238,8 +241,8 @@
 .main-form__input-radio:checked + .main-form__label--radio::after {
   content: "";
   position: absolute;
-  top: 15px;
-  left: -48px;
+  top: 14px;
+  left: -50px;
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -260,10 +263,10 @@
   &::before {
     content: "";
     position: absolute;
-    left: -63px;
+    left: -62px;
     top: 2px;
-    width: 37px;
-    height: 37px;
+    width: 36px;
+    height: 35px;
     border: 2px solid #000000;
   }
 }
@@ -273,7 +276,7 @@
   position: absolute;
   top: 13px;
   left: -53px;
-  width: 21px;
+  width: 20px;
   height: 8px;
   border: 3px solid #000000;
   border-top: none;
@@ -284,7 +287,7 @@
 
 .main-form__input {
   border: none;
-  padding-bottom: 19px;
+  padding-bottom: 16px;
   border-bottom: 2px solid black;
   width: 100%;
   background-color: transparent;
@@ -331,6 +334,10 @@
     line-height: 18px;
     box-sizing: border-box;
   }
+}
+
+.main-form__btn {
+  height: 52px;
 }
 
 @media (min-width: $tablet-width) {
@@ -407,45 +414,45 @@
 
   .main-form__input-radio + .main-form__label--radio {
     &::before {
-      left: -59px;
-      top: 5px;
-      width: 45px;
-      height: 45px;
+      left: -61px;
+      top: 1px;
+      width: 48px;
+      height: 48px;
     }
   }
 
   .main-form__input-radio:checked + .main-form__label--radio::after {
-    top: 21px;
-    left: -44px;
-    width: 19px;
-    height: 19px;
+    top: 17px;
+    left: -45px;
+    width: 20px;
+    height: 20px;
   }
 
   .main-form__input-checkbox + .main-form__label--checkbox {
     &::before {
-      left: -80px;
-      top: 5px;
-      width: 51px;
+      left: -81px;
+      top: 4px;
+      width: 50px;
       height: 48px;
     }
   }
 
   .main-form__input-checkbox:checked + .main-form__label--checkbox::after {
-    top: 21px;
-    left: -67px;
-    width: 26px;
-    height: 11px;
+    top: 18px;
+    left: -68px;
+    width: 27px;
+    height: 14px;
   }
 
   .main-form__fieldset--type {
-    margin-bottom: 21px;
+    margin-bottom: 22px;
     padding-top: 31px;
     padding-bottom: 31px;
     box-sizing: border-box;
 
     & li {
       padding-left: 60px;
-      margin-bottom: 27px;
+      margin-bottom: 25px;
     }
 
     & legend {
@@ -460,15 +467,15 @@
   }
 
   .main-form__fieldset--color {
-    padding-top: 43px;
+    padding-top: 46px;
     box-sizing: border-box;
     min-height: 304px;
     margin-bottom: 0;
 
     & li {
-      width: 160px;
+      width: 158px;
       padding-left: 80px;
-      margin-bottom: 18px;
+      margin-bottom: 17px;
 
       &:last-child {
         margin-bottom: 0;
@@ -482,7 +489,7 @@
 
   .main-form__fieldset--name {
     padding-top: 49px;
-    padding-bottom: 24px;
+    padding-bottom: 25px;
     box-sizing: border-box;
 
     & > div {
@@ -494,7 +501,7 @@
       display: flex;
       flex-wrap: nowrap;
       align-items: center;
-      margin-bottom: 9px;
+      margin-bottom: 8px;
       margin-left: 0;
     }
 
@@ -511,7 +518,7 @@
 
     & input {
       padding: 0;
-      padding-bottom: 17px;
+      padding-bottom: 14px;
       padding-left: 20px;
       margin-bottom: 0;
       margin-top: 0;
@@ -522,6 +529,8 @@
   .main-form__fieldset--phone {
     padding-top: 49px;
     padding-bottom: 24px;
+    height: 123px;
+    box-sizing: border-box;
 
     & legend {
       margin-bottom: 23px;
@@ -534,7 +543,7 @@
     & input {
       margin-bottom: 0;
       margin-top: 16px;
-      padding-bottom: 17px;
+      padding-bottom: 16px;
       padding-left: 17px;
     }
 
@@ -564,7 +573,7 @@
     & input {
       margin-bottom: 0;
       margin-top: 15px;
-      padding-bottom: 17px;
+      padding-bottom: 19px;
       padding-left: 17px;
     }
 
@@ -575,8 +584,8 @@
   }
 
   .main-form__fieldset--add {
-    margin-bottom: 22px;
-    padding-top: 48px;
+    margin-bottom: 19px;
+    padding-top: 50px;
 
     & legend {
       margin-bottom: 25px;
@@ -587,10 +596,10 @@
     }
 
     & textarea {
-      width: 500px;
-      max-width: 500px;
-      min-width: 500px;
-      height: 144px;
+      width: 501px;
+      max-width: 501px;
+      min-width: 501px;
+      height: 142px;
       padding-left: 15px;
       padding-top: 15px;
       margin-bottom: 0;
@@ -599,8 +608,9 @@
   }
 
   .main-form__btn {
+    margin-top: 4px;
     min-width: 230px;
-    height: 53px;
+    height: 52px;
   }
 }
 
@@ -626,7 +636,7 @@
   }
 
   .main-form__fieldset--type {
-    margin-bottom: 21px;
+    margin-bottom: 22px;
     padding-top: 31px;
 
     & li {
@@ -641,8 +651,8 @@
   .main-form__fieldset--color {
     min-width: 875px;
     min-height: 30px;
-    padding-top: 45px;
-    padding-bottom: 32px;
+    padding-top: 46px;
+    padding-bottom: 30px;
 
     & ul {
       width: 875px;
@@ -656,17 +666,23 @@
   }
 
   .main-form__fieldset--name {
-    padding-top: 50px;
-    padding-bottom: 27px;
+    padding-top: 47px;
+    padding-bottom: 29px;
 
     & .main-form__fieldset-wrapper {
-      margin-bottom: 8px;
+      margin-bottom: 0;
+    }
+
+    & label {
+      padding-top: 19px;
+      padding-bottom: 38px;
     }
   }
 
   .main-form__fieldset--phone {
     padding-top: 49px;
     padding-bottom: 0;
+    height: 99px;
 
     & .icon-phone {
       right: 183px;
@@ -676,11 +692,11 @@
 
   .main-form__fieldset--mail {
     padding-top: 24px;
-    padding-bottom: 49px;
+    padding-bottom: 50px;
 
     & .icon-mail {
-      right: 180px;
-      top: 34px;
+      right: 179px;
+      top: 38px;
     }
   }
 
@@ -693,7 +709,7 @@
     & textarea {
       max-width: 700px;
       min-width: 700px;
-      height: 144px;
+      height: 142px;
     }
   }
 
@@ -703,5 +719,9 @@
       font-size: 19px;
       line-height: 19px;
     }
+  }
+
+  .main-form__btn {
+    margin-top: 3px;
   }
 }

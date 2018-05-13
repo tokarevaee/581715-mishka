@@ -3,7 +3,6 @@
   justify-content: center;
   align-items: center;
   padding: 25px 0;
-  //width: 260px;
   box-shadow: 0 1px 0 0 #e5e5e5;
 }
 
@@ -12,6 +11,8 @@
 }
 
 a.social__link {
+  margin-left: -5px;
+
   &:hover {
     fill: $color-blue;
   }
@@ -29,9 +30,10 @@ a.social__link {
     width: 240px;
     align-items: flex-end;
   }
+}
 
-
-  .social svg {
-    //transform: scale(x,y);
+@media (min-width: $desktop-width) {
+  .social {
+    padding-left: 0;
   }
 }
