@@ -48,5 +48,4 @@
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig \u0026\u0026 npm run stylelint"
   },
-  "version": "14.0.0"
-}
+  "version": "14.0.0"}

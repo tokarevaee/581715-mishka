@@ -216,6 +216,7 @@
 
   .reviews__title {
     margin-bottom: 60px;
+    order: -2;
   }
 
   .reviews__text {
@@ -237,9 +238,5 @@
   .reviews__btn {
     order: -1;
     margin-top: 7px;
-  }
-
-  .reviews__title {
-    order: -2;
   }
 }

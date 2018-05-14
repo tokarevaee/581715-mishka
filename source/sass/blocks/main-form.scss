@@ -319,6 +319,7 @@
   margin-bottom: 15px;
   padding: 10px;
   outline: none;
+  resize: none;
 
   &:hover {
     border: 2px solid $color-blue;
@@ -488,7 +489,7 @@
   }
 
   .main-form__fieldset--name {
-    padding-top: 49px;
+    padding-top: 51px;
     padding-bottom: 25px;
     box-sizing: border-box;
 
@@ -584,7 +585,7 @@
   }
 
   .main-form__fieldset--add {
-    margin-bottom: 19px;
+    margin-bottom: 16px;
     padding-top: 50px;
 
     & legend {
@@ -608,7 +609,7 @@
   }
 
   .main-form__btn {
-    margin-top: 4px;
+    margin-top: 7px;
     min-width: 230px;
     height: 52px;
   }

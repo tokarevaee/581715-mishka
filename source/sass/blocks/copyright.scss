@@ -38,16 +38,12 @@ a.copyright__link {
     opacity: 0.3;
   }
 
-  &:hover .copyright-icon{
+  &:hover .copyright-icon {
     fill: #46c1ae;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .copyright {
-
-  }
-
   .copyright__link {
     padding-right: 57px;
     text-align: right;
@@ -61,7 +57,7 @@ a.copyright__link {
 
   .copyright-icon {
     top: -9px;
-    right: -10px;
+    right: -5px;
   }
 }
 

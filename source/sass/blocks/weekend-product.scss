@@ -108,7 +108,6 @@ p.weekend-product__description {
     margin: 0 auto;
     margin-bottom: 23px;
     position: relative;
-    padding-left: 6px;
     padding-bottom: 48px;
 
     &::after {
@@ -160,7 +159,7 @@ p.weekend-product__description {
   .weekend-product__title {
     width: 94px;
     padding-top: 10px;
-    padding-right: 13px;
+    padding-right: 15px;
     line-height: 18px;
     text-align: center;
   }
@@ -177,7 +176,7 @@ p.weekend-product__description {
     width: 334px;
     height: 404px;
     bottom: 48px;
-    right: 0;
+    right: 2px;
     z-index: -1;
     margin-bottom: 0;
   }
@@ -233,7 +232,7 @@ p.weekend-product__description {
 
   .weekend-product__main-info {
     width: 290px;
-    padding-left: 172px;
+    padding-left: 176px;
     min-height: 512px;
   }
 
@@ -253,7 +252,7 @@ p.weekend-product__description {
     width: 525px;
     height: 636px;
     bottom: 83px;
-    right: 2px;
+    right: -1px;
     z-index: -1;
   }
 
